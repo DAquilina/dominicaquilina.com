@@ -1,0 +1,872 @@
+#canvas.story-animation #boy {
+    animation-duration: 269s;
+    animation-name: storyBoyBase;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+
+    display: block;
+
+    /* Initial Conditions */
+    left: 125px;
+    top: 395px;
+
+    -webkit-transform: rotateX(180deg) scaleX(-1);
+            transform: rotateX(180deg) scaleX(-1);
+}
+
+#canvas.story-animation #boy .arm.left {
+    animation-duration: 269s;
+    animation-name: storyBoyArmLeft;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #boy .arm.right {
+    animation-duration: 269s;
+    animation-name: storyBoyArmRight;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #boy .body {
+    animation-duration: 269s;
+    animation-name: storyBoyBody;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #boy .head {
+    animation-duration: 269s;
+    animation-name: storyBoyHead;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+
+/* ********** Keyframes ********* */
+@keyframes storyBoyBase {
+    from {
+        left: 125px;
+        top: 395px;
+
+        opacity: 0.0;
+
+        -webkit-transform: rotateX(180deg) scaleX(-1);
+                transform: rotateX(180deg) scaleX(-1);
+    }
+
+    /* Flip enter */
+    0.37% {
+        left: 125px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    11.15% {
+        left: 125px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    /* Small movement */
+    11.52% {
+        left: 175px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    /* Look away */
+    12.26% {
+        left: 175px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    12.44% {
+        left: 175px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(1);
+                transform: rotateX(0deg) scaleX(1);
+    }
+
+    13.38% {
+        left: 175px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(1);
+                transform: rotateX(0deg) scaleX(1);
+    }
+
+    /* Look back */
+    13.75% {
+        left: 175px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    14.02% {
+        left: 175px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    /* Small movement */
+    17.47% {
+        left: 195px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    17.84% {
+        left: 195px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    /* Big movement */
+    19.33% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    /* Start of bow */
+    20.07% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(-1);
+                transform: rotateX(0deg) scaleX(-1);
+    }
+
+    20.44% {
+        left: 555px;
+        top: 435px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(40deg) scaleX(-1);
+                transform: rotateX(0deg) rotateZ(40deg) scaleX(-1);
+    }
+
+    /* End of bow */
+    20.81% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+    }
+
+    24.91% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+    }
+
+    /* Turn away */
+    25.28% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    /* Start of sigh */
+    26.04% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    26.41% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1.04) scaleY(1.04);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1.04) scaleY(1.04);
+    }
+
+    /* End of sigh */
+    26.78% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1) scaleY(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+
+    /* Flip exit */
+    27.15% {
+        left: 595px;
+        top: 395px;
+
+        opacity: 0.0;
+
+        -webkit-transform: rotateX(180deg) rotateZ(0deg) scaleX(-1) scaleY(1);
+                transform: rotateX(180deg) rotateZ(0deg) scaleX(-1) scaleY(1);
+    }
+
+    /* Reset */
+    27.16% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 0.0;
+
+        -webkit-transform: rotateX(180deg) rotateZ(0deg) scaleX(-1) scaleY(1);
+                transform: rotateX(180deg) rotateZ(0deg) scaleX(-1) scaleY(1);
+    }
+
+    /* Reenter */
+    27.52% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1) scaleY(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+
+    /* Start of bow */
+    31.97% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) scaleX(1);
+                transform: rotateX(0deg) scaleX(1);
+    }
+
+    32.34% {
+        left: 340px;
+        top: 435px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(-40deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(-40deg) scaleX(1);
+    }
+
+    /* End of bow */
+    32.71% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    32.71% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    34.36% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    /* Turn */
+    34.73% {
+        left: 300px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+    }
+
+    /* Move together */
+    38.29% {
+        left: 800px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(-1);
+    }
+
+    /* Turn */
+    38.66% {
+        left: 800px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    45.72% {
+        left: 800px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(0deg) scaleX(1);
+    }
+
+    47.58% {
+        left: 793px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+    }
+
+    /* Exit stage bottom */
+    53.90% {
+        left: 793px;
+        top: 395px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+    }
+
+    56.13% {
+        left: 793px;
+        top: 600px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+    }
+
+    /* Clear */
+    56.14% {
+        left: 793px;
+        top: 600px;
+
+        display: none;
+        opacity: 0.0;
+
+        -webkit-transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+                transform: rotateX(0deg) rotateZ(-7deg) scaleX(1);
+    }
+
+    to {
+        display: none;
+        opacity: 0.0;
+    }
+}
+
+@keyframes storyBoyArmLeft {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    35.10% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    35.65% {
+        -webkit-transform: rotate(20deg);
+                transform: rotate(20deg);
+    }
+
+    36.02% {
+        -webkit-transform: rotate(125deg);
+        transform: rotate(125deg);
+    }
+
+    36.76% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    39.40% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    40.14% {
+        -webkit-transform: rotate(42deg);
+                transform: rotate(42deg);
+    }
+
+    45.72% {
+        -webkit-transform: rotate(42deg);
+                transform: rotate(42deg);
+    }
+
+    47.58% {
+        -webkit-transform: rotate(23deg);
+                transform: rotate(23deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyBoyArmRight {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    19.00% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Tap shoulder */
+    19.37% {
+        -webkit-transform: rotate(75deg);
+                transform: rotate(75deg);
+    }
+
+    19.74% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    30.86% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    31.04% {
+        -webkit-transform: rotate(130deg);
+                transform: rotate(130deg);
+    }
+
+    31.09% {
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+    }
+
+    31.14% {
+        -webkit-transform: rotate(130deg);
+                transform: rotate(130deg);
+    }
+
+    31.19% {
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+    }
+
+    31.37% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Gesturing while talking */
+    35.10% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    35.28% {
+        -webkit-transform: rotate(42deg);
+                transform: rotate(42deg);
+    }
+
+    35.65% {
+        -webkit-transform: rotate(35deg);
+                transform: rotate(35deg);
+    }
+
+    36.02% {
+        -webkit-transform: rotate(125deg);
+                transform: rotate(125deg);
+    }
+
+    36.76% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Holding hands */
+    39.40% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    40.14% {
+        -webkit-transform: rotate(42deg);
+                transform: rotate(42deg);
+    }
+
+    /* Kiss */
+    45.72% {
+        -webkit-transform: rotate(42deg);
+                transform: rotate(42deg);
+    }
+
+    47.58% {
+        -webkit-transform: rotate(23deg);
+                transform: rotate(23deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyBoyBody {
+    from {
+
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyBoyHead {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    1.17% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Look up at tree */
+    3.02% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    6.69% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    /* Look down at ground */
+    8.18% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    8.73% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    /* Look up at Girl */
+    9.10% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    12.26% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Look away quickly */
+    12.63% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    12.81% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    /* Try to look busy */
+    13.18% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    13.38% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    /* Reset */
+    13.75% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    20.91% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start of talking */
+    20.96% {
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+
+    21.01% {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    21.06% {
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+
+    /* End of Talking */
+    21.11% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start of Talking */
+    22.28% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    22.33% {
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+
+    22.38% {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    22.43% {
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+
+    /* End of talking */
+    22.48% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start of talking */
+    24.00% {
+        -webkit-transform: rotate(-4deg);
+                transform: rotate(-4deg);
+    }
+
+    24.05% {
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+
+    24.10% {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    /* End of talking */
+    24.15% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    25.75% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Stare up wistfully */
+    26.12% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    27.15% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    /* Reset */
+    27.16% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start of talking */
+    35.28% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    35.33% {
+        -webkit-transform: rotate(-4deg);
+                transform: rotate(-4deg);
+    }
+
+    35.38% {
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+
+    35.43% {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    35.48% {
+        top: 0px;
+
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start of laugh */
+    36.94% {
+        top: 0px;
+
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    37.00% {
+        top: 2px;
+
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    37.06% {
+        top: 0px;
+
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    37.12% {
+        top: 2px;
+
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* End of laugh */
+    37.18% {
+        top: 0px;
+
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start of Talking */
+    42.93% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    42.98% {
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+
+    43.03% {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    43.08% {
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+
+    /* End of talking */
+    43.13% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    to {
+
+    }
+}

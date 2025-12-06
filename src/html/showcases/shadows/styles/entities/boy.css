@@ -1,0 +1,34 @@
+#boy {
+    display: none;
+    height: 242px;
+    width: 97px;
+
+    transform-origin: bottom center;
+}
+
+#boy .arm {
+    left: 41px;
+    top: 46px;
+
+    height: 97px;
+
+    transform-origin: 6px 5px;
+}
+
+#boy .body {
+    left: 0px;
+    top: 39px;
+
+    height: 210px;
+
+    transform-origin: center right;
+}
+
+#boy .head {
+    left: 15px;
+    top: 0px;
+
+    height: 47px;
+
+    transform-origin: 27px 44px;
+}

@@ -1,0 +1,73 @@
+#kitsune {
+    display: none;
+    height: 250px;
+    width: 371px;
+}
+
+#kitsune .body {
+    left: 145px;
+    top: 48px;
+
+    height: 107px;
+    width: 179px;
+}
+
+#kitsune .head {
+    left: 283px;
+    top: 0px;
+
+    height: 85px;
+    width: 86px;
+
+    transform-origin: 16px 65px;
+}
+
+#kitsune .leg.back.left {
+    left: 169px;
+    top: 157px;
+
+    height: 79px;
+    width: 46px;
+
+    transform-origin: 11px -14px;
+}
+
+#kitsune .leg.back.right {
+    left: 139px;
+    top: 105px;
+
+    height: 133px;
+    width: 69px;
+
+    transform-origin: 36px 31px;
+}
+
+#kitsune .leg.front.left {
+    left: 261px;
+    top: 159px;
+
+    height: 66px;
+    width: 35px;
+
+    transform-origin: 10px -29px;
+}
+
+#kitsune .leg.front.right {
+    left: 253px;
+    top: 115px;
+
+    height: 134px;
+    width: 39px;
+
+    transform-origin: 21px 26px;
+}
+
+#kitsune .tail {
+    left: 0px;
+    top: 23px;
+
+    height: 147px;
+    width: 148px;
+
+    transform-origin: 190px 97px;
+}

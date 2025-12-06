@@ -1,0 +1,88 @@
+#canvas.story-animation .gate {
+    display: block;
+
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+}
+
+#canvas.story-animation #gate-first {
+    animation: 6s linear 195s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 87s; */
+}
+
+#canvas.story-animation #gate-second {
+    animation: 6s linear 198s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 88.5s; */
+}
+
+#canvas.story-animation #gate-third {
+    animation: 6s linear 214.5s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 93.75s; */
+}
+
+#canvas.story-animation #gate-fourth {
+    animation: 6s linear 217.5s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 96.75s; */
+}
+
+#canvas.story-animation #gate-fifth {
+    animation: 6s linear 225.75s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 102.375s; */
+}
+
+#canvas.story-animation #gate-sixth {
+    animation: 6s linear 228.25s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 103.125s; */
+}
+
+#canvas.story-animation #gate-seventh {
+    animation: 6s linear 229.75s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 103.675s; */
+}
+
+#canvas.story-animation #gate-eighth {
+    animation: 6s linear 230.25s infinite running storyGate;
+
+    /* DEBUG */
+    /* animation-duration: 3s;
+    animation-delay: 104.625s; */
+}
+
+/* ********** Keyframes ********** */
+@keyframes storyGate {
+    from {
+        -webkit-transform: rotateX(180deg) scale(1);
+                transform: rotateX(180deg) scale(1);
+    }
+
+    50% {
+        -webkit-transform: rotateX(0deg) scale(1.15);
+                transform: rotateX(0deg) scale(1.15);
+    }
+
+    to {
+        -webkit-transform: rotateX(180deg) scale(1.3);
+                transform: rotateX(180deg) scale(1.3);
+    }
+}

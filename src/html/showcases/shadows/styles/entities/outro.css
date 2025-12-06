@@ -1,0 +1,23 @@
+#canvas #outro-panel {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    background-color: black;
+    opacity: 0.0;
+    z-index: -1;
+}
+
+#canvas .outro-text {
+    left: 50%;
+    top: 50%;
+
+    color: white;
+    margin: 0 auto;
+    opacity: 0.0;
+    z-index: 16;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}

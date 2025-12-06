@@ -1,0 +1,140 @@
+.debug {
+    position: relative;
+
+    background-color: white;
+    height: 400px;
+    margin: 2rem auto;
+    width: 600px;
+}
+
+.debug * {
+    position: absolute;
+
+    transition-timing-function: linear;
+}
+
+.debug img {
+    display: block;
+    opacity: 0.5;
+}
+
+.debug #boy {
+    right: 10px;
+    top: 10px;
+
+    display: block !important;
+    transform-origin: bottom center;
+}
+
+.debug #boy .head {
+    transform: rotate(0deg);
+    transform-origin: 27px 44px;
+}
+
+.debug #boy .arm {
+    transform-origin: 6px 5px;
+}
+
+.debug #boy .arm.left {
+    transform: rotate(0deg);
+}
+
+.debug #boy .arm.right {
+    transform: rotate(0deg);
+}
+
+.debug #girl {
+    left: 10px;
+    top: 10px;
+
+    display: block !important;
+    transform-origin: bottom center;
+}
+
+.debug #girl .arm {
+    transform-origin: 9px 9px;
+}
+
+.debug #girl .arm.left {
+    transform: rotate(0deg);
+}
+
+.debug #girl .arm.right {
+    transform: rotate(0deg);
+}
+
+.debug #girl .head {
+    transform-origin: 25px 51px;
+    transform: rotate(0deg);
+}
+
+.debug #kitsune {
+    display: block !important;
+}
+
+.debug #kitsune .head {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .leg.back.left {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .leg.back.right {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .leg.front.left {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .leg.front.right {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.first {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.second {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.third {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.fourth {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.fifth {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.sixth {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.seventh {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.eighth {
+    transform: rotate(0deg);
+}
+
+.debug #kitsune .tail.ninth {
+    transform: rotate(0deg);
+}
+
+.pixel {
+    position: absolute;
+    left: 47px;
+    top: 61px;
+
+    background-color: black;
+    height: 1px;
+    width: 1px;
+    z-index: 9001;
+}

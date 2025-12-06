@@ -1,0 +1,93 @@
+/* Co-opted from https://code.sololearn.com/WQ7024hOCL2w/#css */
+#canvas.story-animation .fireworks {
+    animation-duration: 269s;
+    animation-name: storyFireworks;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation .fireworks.second::after {
+    position: absolute;
+
+    animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s location linear infinite backwards;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+}
+
+#canvas.story-animation .fireworks.first::after {
+    position: absolute;
+
+    animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s location linear infinite backwards;
+    animation-delay: 3s;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+}
+
+
+/* ********** Keyframes ********* */
+@keyframes bang {
+    from {
+        box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+    }
+}
+
+@keyframes gravity {
+    to {
+        opacity: 0;
+
+        -webkit-transform: translateY(200px);
+                transform: translateY(200px);
+    }
+}
+
+@keyframes location {
+    0%, 19.9% {
+        left: 40%;
+        top: 10%;
+    }
+
+    20%, 39.9% {
+        left: 30%;
+        top: 40%;
+    }
+
+    40%, 59.9% {
+        left: 70%;
+        top: 20%;
+    }
+
+    60%, 79.9% {
+        left: 20%;
+        top: 30%;
+    }
+
+    80%, 99.9% {
+        left: 80%;
+        top: 30%;
+    }
+}
+
+@keyframes storyFireworks {
+    from {
+        opacity: 0.0;
+    }
+
+    45.72% {
+        opacity: 0.0;
+    }
+
+    47.58% {
+        opacity: 1.0
+    }
+
+    54.86% {
+        opacity: 1.0
+    }
+
+    56.13% {
+        opacity: 0.0;
+    }
+
+    to {
+
+    }
+}

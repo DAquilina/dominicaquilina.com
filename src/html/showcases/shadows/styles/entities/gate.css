@@ -1,0 +1,10 @@
+#canvas .gate {
+    left: 75px;
+    top: 35px;
+
+    display: none;
+
+    width: 850px;
+
+    transform-origin: bottom center;
+}

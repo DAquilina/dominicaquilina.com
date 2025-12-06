@@ -1,0 +1,33 @@
+/* ***** Basic Page Structure ***** */
+#content {
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+
+  .content-inner-wrapper {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden auto;
+    padding: var(--spacing);
+  }
+}
+
+footer {
+  position: fixed;
+  right: var(--spacing);
+  bottom: var(--spacing);
+}
+
+/* ***** Containers ***** */
+.showcase-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  text-align: center;
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+}

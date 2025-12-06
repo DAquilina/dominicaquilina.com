@@ -1,0 +1,31 @@
+@import "./variables.css";
+
+.icon {
+  display: inline-block;
+  height: 35px;
+  margin-right: var(--spacing);
+  opacity: 1.0;
+  width: 35px;
+
+  transition: opacity var(--transition);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &.GitHub {
+    background: transparent url(../assets/icons/flaticon_23957_cc_github.svg) no-repeat center center;
+    background-size: contain;
+  }
+
+  &.LinkedIn {
+    background: transparent url(../assets/icons/linkedin_alpha.png) no-repeat center center;
+    background-size: contain !important;
+  }
+}

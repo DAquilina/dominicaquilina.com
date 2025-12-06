@@ -1,0 +1,67 @@
+{
+  "label": "root",
+  "canNavigate": false,
+  "children": [
+    {
+      "canNavigate": true,
+      "label": "Home",
+      "path": "home",
+      "title": "Dominic Aquilina's Web Portal",
+      "children": [],
+      "scripts": [
+        {
+          "bootstrap": "init",
+          "path": "/src/scripts/routes/home.ts"
+        }
+      ]
+    },
+    {
+      "canNavigate": true,
+      "label": "About",
+      "path": "about",
+      "title": "Who is Dominic Aquilina, anyway?",
+      "children": []
+    },
+    {
+      "canNavigate": true,
+      "label": "Experience",
+      "path": "experience",
+      "title": "Where the magic happened",
+      "children": [],
+      "scripts": [
+        {
+          "bootstrap": "init",
+          "path": "/src/scripts/routes/experience.ts"
+        }
+      ]
+    },
+    {
+      "canNavigate": true,
+      "label": "Resumé",
+      "path": "resume",
+      "title": "You should really hire this guy, he seems cool",
+      "children": []
+    },
+    {
+      "label": "footer",
+      "canNavigate": false,
+      "excludeFromNav": true,
+      "children": [
+        {
+          "label": "GitHub",
+          "canNavigate": true,
+          "external": true,
+          "path": "https://github.com/DAquilina",
+          "children": []
+        },
+        {
+          "label": "LinkedIn",
+          "canNavigate": true,
+          "external": true,
+          "path": "https://www.linkedin.com/in/dominicaquilina/",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

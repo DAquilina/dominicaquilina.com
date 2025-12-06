@@ -1,0 +1,19 @@
+@import "../variables.css";
+
+[data-route=experience] {
+  nav {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  #experience-items {
+    margin: var(--spacing) auto;
+    max-width: var(--constrain-lg);
+    
+    .experience-item {
+      border: 1px solid var(--colour-text);
+      border-radius: var(--border-radius);
+      margin: var(--spacing);
+      padding: var(--spacing);
+    }
+  }
+}

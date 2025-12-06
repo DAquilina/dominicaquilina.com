@@ -1,0 +1,34 @@
+#girl {
+    display: none;
+    height: 246px;
+    width: 143px;
+
+    transform-origin: bottom center;
+}
+
+#girl .arm {
+    left: 56px;
+    top: 57px;
+
+    height: 80px;
+
+    transform-origin: 9px 9px;
+}
+
+#girl .body {
+    top: 42px;
+    left: 0px;
+
+    height: 200px;
+
+    transform-origin: center right;
+}
+
+#girl .head {
+    left: 47px;
+    top: 0px;
+
+    height: 56px;
+
+    transform-origin: 25px 51px;
+}

@@ -1,0 +1,8 @@
+#tree {
+    bottom: -2px;
+    left: 50%;
+
+    height: 875px;
+
+    transform-origin: bottom center;
+}

@@ -1,0 +1,7 @@
+@import "../variables.css";
+
+[data-route=about] {
+  nav {
+    margin-bottom: var(--spacing-lg);
+  }
+}

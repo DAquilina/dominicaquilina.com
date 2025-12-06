@@ -1,0 +1,2006 @@
+#canvas.story-animation #kitsune {
+    left: -375px;
+    top: 200px;
+
+    display: block;
+
+    animation-duration: 269s;
+    animation-name: storyKitsuneBase;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .body {
+    animation-duration: 269s;
+    animation-name: storyKitsuneBody;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .head {
+    animation-duration: 269s;
+    animation-name: storyKitsuneHead;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .leg.back.left {
+    animation-duration: 269s;
+    animation-name: storyKitsuneLegBackLeft;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .leg.back.right {
+    animation-duration: 269s;
+    animation-name: storyKitsuneLegBackRight;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .leg.front.left {
+    animation-duration: 269s;
+    animation-name: storyKitsuneLegFrontLeft;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .leg.front.right {
+    animation-duration: 269s;
+    animation-name: storyKitsuneLegFrontRight;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.first {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailFirst;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.second {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailSecond;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.third {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailThird;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.fourth {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailFourth;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.fifth {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailFifth;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.sixth {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailSixth;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.seventh {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailSeventh;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.eighth {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailEighth;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+#canvas.story-animation #kitsune .tail.ninth {
+    animation-duration: 269s;
+    animation-name: storyKitsuneTailNinth;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+}
+
+/* ********** Keyframes ********** */
+@keyframes storyKitsuneBase {
+    from {
+        left: -375px;
+        top: 200px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    56.14% {
+        left: -375px;
+        top: 200px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    /* Enter stage left */
+    57.25% {
+        left: 50px;
+        top: 150px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    58.36% {
+        left: 50px;
+        top: 150px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    /* Jump to right side of screen */
+    59.48% {
+        left: 579px;
+        top: 50px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    /* Turn */
+    59.85% {
+        left: 579px;
+        top: 50px;
+
+        -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+    }
+
+    60.59% {
+        left: 579px;
+        top: 50px;
+
+        -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+    }
+
+    /* Jump to middle of screen */
+    61.71% {
+        left: 314px;
+        top: 350px;
+
+        -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+    }
+
+    /* Turn */
+    62.08% {
+        left: 314px;
+        top: 350px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    63.20% {
+        left: 314px;
+        top: 350px;
+
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+    /* Raise to hind legs */
+    64.31% {
+        left: 314px;
+        top: 350px;
+
+        -webkit-transform: rotate(-30deg) scaleX(1);
+                transform: rotate(-30deg) scaleX(1);
+    }
+
+    72.81% {
+        left: 314px;
+        top: 350px;
+
+        opacity: 1.0;
+
+        -webkit-transform: rotate(-30deg) scaleX(1);
+                transform: rotate(-30deg) scaleX(1);
+    }
+
+    73.92% {
+        left: 314px;
+        top: 350px;
+
+        display: none;
+        opacity: 0.0;
+
+        -webkit-transform: rotate(-30deg) scaleX(1);
+                transform: rotate(-30deg) scaleX(1);
+    }
+
+    to {
+        left: 314px;
+        top: 350px;
+
+        display: none;
+        opacity: 0.0;
+
+        -webkit-transform: rotate(-30deg) scaleX(1);
+                transform: rotate(-30deg) scaleX(1);
+    }
+}
+
+@keyframes storyKitsuneBody {
+    from {
+
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneHead {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    63.20% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Raise to hind legs */
+    64.31% {
+        -webkit-transform: rotate(-34deg);
+                transform: rotate(-34deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-34deg);
+                transform: rotate(-34deg);
+    }
+}
+
+@keyframes storyKitsuneLegBackLeft {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.51% {
+        -webkit-transform: rotate(-22deg);
+                transform: rotate(-22deg);
+    }
+
+    56.88% {
+        -webkit-transform: rotate(35deg);
+                transform: rotate(35deg);
+    }
+
+    /* End jump */
+    57.25% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    58.36% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    58.73% {
+        -webkit-transform: rotate(-22deg);
+                transform: rotate(-22deg);
+    }
+
+    59.10% {
+        -webkit-transform: rotate(35deg);
+                transform: rotate(35deg);
+    }
+
+    /* End jump */
+    59.48% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    60.59% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    60.96% {
+        -webkit-transform: rotate(-22deg);
+                transform: rotate(-22deg);
+    }
+
+    61.33% {
+        -webkit-transform: rotate(35deg);
+                transform: rotate(35deg);
+    }
+
+    /* End jump */
+    61.71% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    63.20% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Raise to hind legs */
+    64.31% {
+        -webkit-transform: rotate(39deg);
+                transform: rotate(39deg);
+    }
+
+    to {
+        -webkit-transform: rotate(39deg);
+                transform: rotate(39deg);
+    }
+}
+
+@keyframes storyKitsuneLegBackRight {
+    from {
+
+    }
+
+    /* Start Jump */
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.51% {
+        -webkit-transform: rotate(-37deg);
+                transform: rotate(-37deg);
+    }
+
+    56.88% {
+        -webkit-transform: rotate(38deg);
+                transform: rotate(38deg);
+    }
+
+    /* End jump */
+    57.25% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    58.36% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    58.73% {
+        -webkit-transform: rotate(-37deg);
+                transform: rotate(-37deg);
+    }
+
+    59.10% {
+        -webkit-transform: rotate(38deg);
+                transform: rotate(38deg);
+    }
+
+    /* End jump */
+    59.48% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    60.59% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    60.96% {
+        -webkit-transform: rotate(-37deg);
+                transform: rotate(-37deg);
+    }
+
+    61.33% {
+        -webkit-transform: rotate(38deg);
+                transform: rotate(38deg);
+    }
+
+    /* End jump */
+    61.71% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    63.20% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Raise to hind legs */
+    64.31% {
+        -webkit-transform: rotate(28deg);
+                transform: rotate(28deg);
+    }
+
+    to {
+        -webkit-transform: rotate(28deg);
+                transform: rotate(28deg);
+    }
+}
+
+@keyframes storyKitsuneLegFrontLeft {
+    from {
+
+    }
+
+    /* Start Jump */
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.51% {
+        -webkit-transform: rotate(29deg);
+                transform: rotate(29deg);
+    }
+
+    56.88% {
+        -webkit-transform: rotate(-44deg);
+                transform: rotate(-44deg);
+    }
+
+    /* End jump */
+    57.25% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    58.36% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    58.73% {
+        -webkit-transform: rotate(29deg);
+                transform: rotate(29deg);
+    }
+
+    59.10% {
+        -webkit-transform: rotate(-44deg);
+                transform: rotate(-44deg);
+    }
+
+    /* End jump */
+    59.48% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    60.59% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    60.96% {
+        -webkit-transform: rotate(29deg);
+                transform: rotate(29deg);
+    }
+
+    61.33% {
+        -webkit-transform: rotate(-44deg);
+                transform: rotate(-44deg);
+    }
+
+    /* End jump */
+    61.71% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    63.20% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Raise to hind legs */
+    64.31% {
+        -webkit-transform: rotate(-68deg);
+                transform: rotate(-68deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-68deg);
+                transform: rotate(-68deg);
+    }
+}
+
+@keyframes storyKitsuneLegFrontRight {
+    from {
+
+    }
+
+    /* Start Jump */
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.51% {
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    56.88% {
+        -webkit-transform: rotate(-68deg);
+                transform: rotate(-68deg);
+    }
+
+    /* End jump */
+    57.25% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    58.36% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    58.73% {
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    59.10% {
+        -webkit-transform: rotate(-68deg);
+                transform: rotate(-68deg);
+    }
+
+    /* End jump */
+    59.48% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Start Jump */
+    60.59% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    60.96% {
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    61.33% {
+        -webkit-transform: rotate(-68deg);
+                transform: rotate(-68deg);
+    }
+
+    /* End jump */
+    61.71% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    63.20% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    /* Raise to hind legs */
+    64.31% {
+        -webkit-transform: rotate(-34deg);
+                transform: rotate(-34deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-34deg);
+                transform: rotate(-34deg);
+    }
+}
+
+@keyframes storyKitsuneTailFirst {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.15% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    67.26% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    68.37% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    69.48% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    70.59% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    71.70% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    72.81% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailSecond {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+
+    65.16% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.27% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    67.38% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    68.49% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    69.60% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    70.71% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    71.82% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    72.93% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailThird {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    65.28% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.39% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    67.50% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    68.61% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    69.71% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    70.82% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    71.93% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.04% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailFourth {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    65.41% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.52% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    67.63% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    68.74% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    69.85% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    70.96% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    72.07% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.18% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailFifth {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    65.53% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.54% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    67.65% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    68.76% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    69.87% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    70.98% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    72.09% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.20% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailSixth {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    65.65% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.76% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    67.87% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    68.98% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    70.09% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    71.20% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    72.31% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.42% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailSeventh {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    65.78% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    66.89% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    68.00% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    69.11% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    70.22% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    71.33% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    72.44% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.55% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailEighth {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(75deg);
+                transform: rotate(75deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(75deg);
+                transform: rotate(75deg);
+    }
+
+    65.90% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    67.01% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    68.12% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    69.23% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    70.34% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    71.45% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    72.56% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.67% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(75deg);
+                transform: rotate(75deg);
+    }
+
+    to {
+
+    }
+}
+
+@keyframes storyKitsuneTailNinth {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.14% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    56.69% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    57.24% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    57.79% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    58.34% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    58.89% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    59.44% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    59.99% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    60.54% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    61.09% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    61.64% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    62.19% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    62.74% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    63.29% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+
+    63.84% {
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+    }
+
+    64.31% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.49% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    64.67% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    65.04% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    66.15% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    67.26% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    68.37% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    69.48% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    70.59% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    71.70% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    72.81% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+
+    73.92% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    to {
+
+    }
+}

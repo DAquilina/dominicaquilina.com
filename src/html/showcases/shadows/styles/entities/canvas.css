@@ -1,0 +1,29 @@
+#canvas {
+    position: relative;
+
+    background-color: black;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px;
+}
+
+#canvas * {
+    position: absolute;
+
+    transition-timing-function: linear;
+}
+
+#canvas img {
+    display: block;
+}
+
+#start {
+    left: 50%;
+    top: 50%;
+
+    z-index: 20;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}

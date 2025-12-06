@@ -1,0 +1,29 @@
+#canvas.intro-animation {
+    background-color: white;
+}
+
+#canvas.intro-animation #intro-text {
+    animation-duration: 12s;
+    animation-name: introText;
+
+    /* DEBUG */
+    /* animation-duration: 6s; */
+
+    color: black;
+    display: block;
+}
+
+/* ********** Keyframes ********** */
+@keyframes introText {
+    from {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}

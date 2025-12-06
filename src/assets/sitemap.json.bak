@@ -1,0 +1,138 @@
+{
+  "label": "root",
+  "canNavigate": false,
+  "children": [
+    {
+      "canNavigate": true,
+      "label": "Home",
+      "path": "home",
+      "title": "Dominic Aquilina's Web Portal",
+      "children": []
+    },
+    {
+      "canNavigate": true,
+      "label": "Portfolio",
+      "path": "portfolio",
+      "title": "A body of work from a beautiful mind",
+      "children": [
+        {
+          "canNavigate": true,
+          "label": "Resumé Adventure",
+          "path": "portfolio/adventure",
+          "title": "Get inside the mind (and credentials!) of Dominic Aquilina",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "CV: The Movie",
+          "path": "portfolio/cv-movie",
+          "title": "Why read my CV when you can *experience* it?",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "The Shavening",
+          "path": "portfolio/shavening",
+          "title": "A portrait of a man... sort of",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "Blog (Creative Writing)",
+          "path": "portfolio/blog",
+          "title": "Creativity comes in many forms",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "MMSON: MoonMoon's JSON-based Website Builder",
+          "path": "portfolio/mmson",
+          "title": "I'm So Meta Even This Acronym",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "Shadows",
+          "path": "portfolio/shadows",
+          "title": "Thoughtful AND Creative!",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "Hamburger Menu",
+          "path": "portfolio/hamburger",
+          "title": "Sinking my teeth into a really terrible pun",
+          "children": [],
+          "scripts": [
+            {
+              "path": "../../pages/hamburger-menu/scripts/hamburger-menu.mjs"
+            },
+            {
+              "path": "../../pages/hamburger-menu/scripts/summary-menu.mjs"
+            },
+            {
+              "bootstrap": "bootstrapHamburgerMenuDemo",
+              "path": "../../pages/hamburger-menu/scripts/index.mjs"
+            }
+          ]
+        },
+        {
+          "canNavigate": true,
+          "label": "Animatronic Sorting Hat",
+          "path": "portfolio/sorting-hat",
+          "title": "All bark, but a little bite too",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "label": "MindGame",
+          "path": "portfolio/mindgame",
+          "title": "Helping reduce the stigma of mental health",
+          "children": []
+        }
+      ]
+    },
+    {
+      "canNavigate": true,
+      "label": "About",
+      "path": "about",
+      "title": "Who is Dominic Aquilina, anyway?",
+      "children": []
+    },
+    {
+      "canNavigate": true,
+      "label": "Experience",
+      "path": "experience",
+      "title": "Where the magic happened",
+      "children": []
+    },
+    {
+      "canNavigate": true,
+      "label": "Resumé",
+      "path": "resume",
+      "title": "You should really hire this guy, he seems cool",
+      "children": []
+    },
+    {
+      "label": "footer",
+      "canNavigate": false,
+      "excludeFromNav": true,
+      "children": [
+        {
+          "label": "GitHub",
+          "canNavigate": true,
+          "external": true,
+          "path": "https://github.com/DAquilina",
+          "children": []
+        },
+        {
+          "label": "LinkedIn",
+          "canNavigate": true,
+          "external": true,
+          "path": "https://www.linkedin.com/in/dominicaquilina/",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+#canvas.story-animation #outro-panel {
+    animation-duration: 269s;
+    animation-name: storyOutroPanel;
+}
+
+#canvas.story-animation #outro-text-first {
+    animation-duration: 269s;
+    animation-name: storyOutroTextFirst;
+}
+
+#canvas.story-animation #outro-text-second {
+    animation-duration: 269s;
+    animation-name: storyOutroTextSecond;
+}
+
+#canvas.story-animation #outro-text-third {
+    animation-duration: 269s;
+    animation-name: storyOutroTextThird;
+}
+
+#canvas.story-animation #outro-text-fourth {
+    animation-duration: 269s;
+    animation-name: storyOutroTextFourth;
+}
+
+#canvas.story-animation #outro-text-fifth {
+    animation-duration: 269s;
+    animation-name: storyOutroTextFifth;
+}
+
+
+/* ********** Keyframes ********* */
+@keyframes storyOutroPanel {
+    from {
+        display: none;
+        opacity: 0.0;
+    }
+
+    89.21% {
+        display: block;
+        opacity: 0.0;
+        z-index: 15;
+    }
+
+    89.21% {
+        display: block;
+        opacity: 0.0;
+    }
+
+    91.08% {
+        opacity: 1.0;
+    }
+
+    to {
+        display: block;
+        opacity: 1.0;
+    }
+}
+
+@keyframes storyOutroTextFirst {
+    from {
+        opacity: 0.0;
+    }
+
+    87.36% {
+        display: block;
+        opacity: 0.0;
+    }
+
+    87.73% {
+        opacity: 1.0;
+    }
+
+    89.59% {
+        opacity: 1.0;
+    }
+
+    89.96% {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+@keyframes storyOutroTextSecond {
+    from {
+        opacity: 0.0;
+    }
+
+    89.96% {
+        display: block;
+        opacity: 0.0;
+    }
+
+    90.33% {
+        opacity: 1.0;
+    }
+
+    92.19% {
+        opacity: 1.0;
+    }
+
+    92.76% {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+@keyframes storyOutroTextThird {
+    from {
+        opacity: 0.0;
+    }
+
+    92.76% {
+        display: block;
+        opacity: 0.0;
+    }
+
+    93.13% {
+        opacity: 1.0;
+    }
+
+    94.99% {
+        opacity: 1.0;
+    }
+
+    95.36% {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+@keyframes storyOutroTextFourth {
+    from {
+        opacity: 0.0;
+    }
+
+    95.36% {
+        display: block;
+        opacity: 0.0;
+    }
+
+    95.73% {
+        opacity: 1.0;
+    }
+
+    97.59% {
+        opacity: 1.0;
+    }
+
+    97.96% {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+@keyframes storyOutroTextFifth {
+    from {
+        opacity: 0.0;
+    }
+
+    97.96% {
+        display: block;
+        opacity: 0.0;
+    }
+
+    98.33% {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}

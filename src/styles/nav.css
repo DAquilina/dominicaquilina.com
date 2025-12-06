@@ -1,0 +1,95 @@
+@import "./variables.css";
+
+#nav {
+  position: relative;
+
+  display: block;
+  text-align: center;
+  z-index: var(--z-index-above);
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a,
+      span {
+        width: 100%;
+
+        &:active + ul,
+        &:focus + ul,
+        &:hover + ul {
+          /* This is a magic number that is being used until Firefox and Safari support interpolate-size */
+          max-height: 375px;
+        }
+      }
+
+      span {
+        display: inline-block;
+        padding: var(--spacing-sm) var(--spacing);
+      }
+    }
+
+    ul {
+      background-color: var(--colour-accent-disabled);
+      border-radius: var(--border-radius);
+      max-height: 0px;
+      overflow: hidden;
+
+      transition: max-height var(--transition);
+
+      &:active,
+      &:focus,
+      &:hover {
+        max-height: 375px;
+      }
+    }
+  }
+
+  & > ul {
+    display: inline-flex;
+    gap: var(--spacing);
+    height: calc(2 * var(--spacing-sm) + var(--font-size-md) + 2px);
+    overflow: visible;
+
+    & > li {
+      width: 150px;
+
+      & > a,
+      & > span {
+        background-color: var(--colour-accent);
+        border-radius: var(--border-radius);
+        color: var(--colour-text-light);
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: var(--colour-accent-alt);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* TODO: Figure out a way to do this more dynamically */
+[data-route=about] [data-target=about],
+[data-route=adventure] [data-target=adventure],
+[data-route=cv-movie] [data-target=cv-movie],
+[data-route=experience] [data-target=portfolio],
+[data-route=hamburger] [data-target=hamburger],
+[data-route=home] [data-target=home],
+[data-route=mindgame] [data-target=mindgame],
+[data-route=mmson] [data-target=mmson],
+[data-route=portfolio] [data-target=portfolio],
+[data-route=resume] [data-target=resume],
+[data-route=shavening] [data-target=shavening],
+[data-route=sorting-hat] [data-target=sorting-hat] {
+  background-color: var(--colour-accent-disabled) !important;
+  color: var(--colour-text) !important;
+  cursor: default;
+}

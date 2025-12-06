@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shadows</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap">
+    <link rel="stylesheet" href="styles/base.css" />
+
+    <link rel="stylesheet" href="styles/animations/boy.css" />
+    <link rel="stylesheet" href="styles/animations/canvas.css" />
+    <link rel="stylesheet" href="styles/animations/fireworks.css" />
+    <link rel="stylesheet" href="styles/animations/gate.css" />
+    <link rel="stylesheet" href="styles/animations/girl.css" />
+    <link rel="stylesheet" href="styles/animations/intro.css" />
+    <link rel="stylesheet" href="styles/animations/kitsune.css" />
+    <link rel="stylesheet" href="styles/animations/outro.css" />
+    <link rel="stylesheet" href="styles/animations/tree.css" />
+
+    <link rel="stylesheet" href="styles/entities/boy.css" />
+    <link rel="stylesheet" href="styles/entities/canvas.css" />
+    <link rel="stylesheet" href="styles/entities/fireworks.css" />
+    <link rel="stylesheet" href="styles/entities/gate.css" />
+    <link rel="stylesheet" href="styles/entities/girl.css" />
+    <link rel="stylesheet" href="styles/entities/intro.css" />
+    <link rel="stylesheet" href="styles/entities/kitsune.css" />
+    <link rel="stylesheet" href="styles/entities/outro.css" />
+    <link rel="stylesheet" href="styles/entities/tree.css" />
+
+    <!-- DEBUG -->
+    <link rel="stylesheet" href="styles/debug.css" />
+  </head>
+
+  <body>
+    <div id="canvas">
+      <button id="start">
+        BEGIN
+      </button>
+
+      <div id="intro-text">
+        <h1>Shadows</h1>
+        <p>A Shadow Play by Dominic Aquilina</p>
+      </div>
+
+      <div class="fireworks first"></div>
+      <div class="fireworks second"></div>
+
+      <img id="tree" src="assets/images/tree.png" alt="tree" />
+
+      <img id="gate-first" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-second" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-third" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-fourth" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-fifth" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-sixth" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-seventh" src="assets/images/torii.png" class="gate" alt="torii gate" />
+      <img id="gate-eighth" src="assets/images/torii.png" class="gate" alt="torii gate" />
+
+      <div id="boy">
+        <img class="head" src="assets/images/boy/boy-head.png" alt="" />
+        <img class="body" src="assets/images/boy/boy-body.png" alt="" />
+        <img class="arm left" src="assets/images/boy/boy-arm.png" alt="" />
+        <img class="arm right" src="assets/images/boy/boy-arm.png" alt="" />
+      </div>
+
+      <div id="girl">
+        <img class="head" src="assets/images/girl/girl-head.png" alt="" />
+        <img class="body" src="assets/images/girl/girl-body.png" alt="" />
+        <img class="arm left" src="assets/images/girl/girl-arm.png" alt="" />
+        <img class="arm right" src="assets/images/girl/girl-arm.png" alt="" />
+      </div>
+
+      <div id="kitsune">
+        <img class="head" src="assets/images/kitsune/kitsune-head.png" alt="" />
+        <img class="body" src="assets/images/kitsune/kitsune-body.png" alt="" />
+        <img class="leg left back" src="assets/images/kitsune/kitsune-leg-back-left.png" alt="" />
+        <img class="leg right back" src="assets/images/kitsune/kitsune-leg-back-right.png" alt="" />
+        <img class="leg left front" src="assets/images/kitsune/kitsune-leg-front-left.png" alt="" />
+        <img class="leg right front" src="assets/images/kitsune/kitsune-leg-front-right.png" alt="" />
+        <img class="tail first" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail second" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail third" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail fourth" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail fifth" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail sixth" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail seventh" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail eighth" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+        <img class="tail ninth" src="assets/images/kitsune/kitsune-tail.png" alt="" />
+      </div>
+
+      <div id="outro-panel"></div>
+
+      <p id="outro-text-first" class="outro-text">
+        In the journey of life, <br />
+        We must all face shadows
+      </p>
+
+      <p id="outro-text-second" class="outro-text">
+        The shadows of fear <br />
+        The shadows of doubt <br />
+        The shadows of loss
+      </p>
+
+      <p id="outro-text-third" class="outro-text">
+        But remember...
+      </p>
+
+      <p id="outro-text-fourth" class="outro-text">
+        There can be no shadow without light to cast it
+      </p>
+
+      <p id="outro-text-fifth" class="outro-text">
+        Be the light, and know you are loved
+      </p>
+    </div>
+
+    <button id="reset">
+      RESET
+    </button>
+
+    <audio id="storyMusic">
+      <source src="assets/06 Yoshida Brothers - Yoshida Brothers III -  Cherry Blossoms in Winter.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

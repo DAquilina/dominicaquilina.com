@@ -1,0 +1,79 @@
+#canvas.intro-animation #tree {
+    animation-duration: 12s;
+    animation-name: introTree;
+
+    /* DEBUG */
+    /* animation-duration: 6s; */
+}
+
+#canvas.story-animation #tree {
+    animation-duration: 269s;
+    animation-name: storyTree;
+
+    /* DEBUG */
+    /* animation-duration: 134s; */
+
+    /* Initial conditions */
+    opacity: 0.0;
+
+    -webkit-transform: translateX(-50%) rotateX(-180deg);
+            transform: translateX(-50%) rotateX(-180deg);
+}
+
+/* ********** Intro Keyframes ********** */
+@keyframes introTree {
+    from {
+        opacity: 0.0;
+
+        -webkit-transform: translateX(-50%) rotateX(-180deg);
+                transform: translateX(-50%) rotateX(-180deg);
+    }
+
+    50% {
+        opacity: 0.0;
+
+        -webkit-transform: translateX(-50%) rotateX(-180deg);
+                transform: translateX(-50%) rotateX(-180deg);
+    }
+
+    75% {
+        opacity: 0.25;
+
+        -webkit-transform: translateX(-50%) rotateX(0deg);
+                transform: translateX(-50%) rotateX(0deg);
+    }
+
+    to {
+        opacity: 0.25;
+
+        -webkit-transform: translateX(-50%) rotateX(0deg);
+                transform: translateX(-50%) rotateX(0deg);
+    }
+}
+
+@keyframes storyTree {
+    from {
+        opacity: 0.25;
+
+        -webkit-transform: translateX(-50%) rotateX(0deg);
+                transform: translateX(-50%) rotateX(0deg);
+    }
+
+    53.90% {
+        opacity: 0.25;
+
+        -webkit-transform: translateX(-50%) rotateX(0deg);
+                transform: translateX(-50%) rotateX(0deg);
+    }
+
+    56.13% {
+        opacity: 0.0;
+
+        -webkit-transform: translateX(-50%) rotateX(0deg) scaleY(-1);
+                transform: translateX(-50%) rotateX(0deg) scaleY(-1);
+    }
+
+    to {
+
+    }
+}
