@@ -4,7 +4,7 @@
   "version": "4.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "npm run clean && vite build && cp -R src/html dist/html",
     "clean": "rm -rf ./dist",
     "dev": "npx vite"
   },

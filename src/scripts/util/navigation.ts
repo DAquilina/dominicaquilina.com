@@ -5,6 +5,7 @@ import { ElementIds } from "../enums/element-ids";
 
 import { Page } from "../types/page";
 import { Script } from "../types/script";
+import { Setup } from "../setup";
 
 
 export namespace Navigation {
@@ -65,21 +66,8 @@ export namespace Navigation {
               await delay(10);
             }
 
-            // TODO: this will be for dynamically loading scripts. Could be useful to lazy load the gallery or something
-            // for now I haven't implemented a dynamic page system, so we're just going off of the sitemap
-            if (page.scripts?.length) {
-              page.scripts.forEach((script: Script) => {
-
-                import(script.path)
-                  .then(
-                    (module) => {
-
-                      if (script.bootstrap) {
-                        module[script.bootstrap]();
-                      }
-                    }
-                  );
-              });
+            if (page.bootstrapFunction) {
+              Setup[page.bootstrapFunction as keyof typeof Setup]?.();
             }
 
             Navigation.bootstrapNav();

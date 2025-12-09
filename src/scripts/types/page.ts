@@ -8,6 +8,6 @@ export type Page = {
   id?: string;
   label: string;
   path?: string;
-  scripts?: Array<Script>
+  bootstrapFunction?: string;
   title?: string;
 };

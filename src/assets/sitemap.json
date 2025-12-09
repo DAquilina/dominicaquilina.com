@@ -8,12 +8,7 @@
       "path": "home",
       "title": "Dominic Aquilina's Web Portal",
       "children": [],
-      "scripts": [
-        {
-          "bootstrap": "init",
-          "path": "/src/scripts/routes/home.ts"
-        }
-      ]
+      "bootstrapFunction": "bootstrapHome"
     },
     {
       "canNavigate": true,
@@ -28,12 +23,7 @@
       "path": "experience",
       "title": "Where the magic happened",
       "children": [],
-      "scripts": [
-        {
-          "bootstrap": "init",
-          "path": "/src/scripts/routes/experience.ts"
-        }
-      ]
+      "bootstrapFunction": "bootstrapExperience"
     },
     {
       "canNavigate": true,
