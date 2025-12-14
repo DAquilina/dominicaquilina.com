@@ -27,7 +27,12 @@ export namespace Navigation {
 
         event.preventDefault();
 
-        navigate(getPage((event.target! as HTMLElement).getAttribute("data-target")!));
+        try {
+          navigate(getPage((event.target! as HTMLElement).getAttribute("data-target")!));
+        }
+        catch (error) {
+          navigate(getPage("404"));
+        }
       });
     });
   }
@@ -82,6 +87,9 @@ export namespace Navigation {
         Dom.toggleAttributeOnElement("body", "data-loading");
 
         Dom.injectHTML(ElementIds.MainContentContainer, await targetHtml.text());
+      },
+      async () => {
+
       }
     );
   }
@@ -110,6 +118,7 @@ export namespace Navigation {
     loadPage(targetPage);
 
     _updateUrl(targetPage);
+    _updateTitle(targetPage);
   }
 
 
@@ -165,6 +174,12 @@ export namespace Navigation {
           _generatePageMap(child);
         }
       );
+    }
+  }
+
+  function _updateTitle(page: Page): void {
+    if (page.title) {
+      document.title = page.title;
     }
   }
 

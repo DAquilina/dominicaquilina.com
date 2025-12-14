@@ -1,0 +1,161 @@
+@import "../variables.css";
+@import "../animations.css";
+
+@property --hearth-glow-boundary-1 {
+  syntax: '<percentage>';
+  initial-value: 16%;
+  inherits: false;
+}
+
+@property --hearth-glow-boundary-2 {
+  syntax: '<percentage>';
+  initial-value: 40%;
+  inherits: false;
+}
+
+[data-route="404"] {
+  background: radial-gradient(circle, var(--colour-fire-yellow) 0%, var(--colour-fire-orange) var(--hearth-glow-boundary-1), rgba(0, 0, 0, 1) var(--hearth-glow-boundary-2), rgba(0, 0, 0, 1) 100%);
+  animation: hearth-glow var(--transition-timing-long) infinite alternate forwards var(--transition-function-flicker);
+
+  .showcase-container {
+    color: var(--colour-text-light);
+
+    #hearth {
+      position: relative;
+
+      height: 300px;
+      margin: var(--spacing) auto;
+      padding: var(--spacing-lg);
+      width: 300px;
+
+      .log {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+
+        background: linear-gradient(0deg, var(--colour-log-dark) 0%, var(--colour-log-light) 23%, var(--colour-log-light) 61%, var(--colour-log-dark) 100%);
+        border: 1px solid var(--colour-log-border);
+        border-left: 0;
+        height: 10%;
+        width: 60%;
+        z-index: var(--z-index-nudge);
+
+        &::after {
+          position: absolute;
+          bottom: -1px;
+          left: -6%;
+          top: -1px;
+
+          background: linear-gradient(0deg, var(--colour-log-dark) 0%, var(--colour-log-light) 23%, var(--colour-log-light) 61%, var(--colour-log-dark) 100%);
+          border-left: 1px solid var(--colour-log-border);
+          border-radius: 100%;
+          content: " ";
+          width: 13%;
+          z-index: var(--z-index-behind);
+        }
+
+        &::before {
+          position: absolute;
+          bottom: -1px;
+          right: -7%;
+          top: -1px;
+
+          background: radial-gradient(
+            var(--colour-log-end) 0%,
+            var(--colour-log-end) 10%,
+            var(--colour-log-light) 11%,
+            var(--colour-log-light) 12%,
+            var(--colour-log-end) 13%,
+            var(--colour-log-end) 25%,
+            var(--colour-log-light) 26%,
+            var(--colour-log-light) 27%,
+            var(--colour-log-end) 28%,
+            var(--colour-log-end) 40%,
+            var(--colour-log-light) 41%,
+            var(--colour-log-light) 42%,
+            var(--colour-log-end) 43%,
+            var(--colour-log-end) 55%,
+            var(--colour-log-light) 56%,
+            var(--colour-log-light) 57%,
+            var(--colour-log-end) 58%,
+            var(--colour-log-end) 70%,
+            var(--colour-log-light) 71%,
+            var(--colour-log-light) 72%,
+            var(--colour-log-end) 73%,
+            var(--colour-log-end) 100%
+          );
+          border: 1px solid var(--colour-log-border);
+          border-radius: 100%;
+          content: " ";
+          width: 13%;
+
+          transform: rotateY(50deg);
+        }
+
+        &.log1 {
+          transform: translateX(-50%) rotate(-15deg);
+        }
+
+        &.log2 {
+          transform: translateX(-50%) rotate(15deg);
+        }
+      }
+
+      .flame {
+        position: absolute;
+        left: 50%;
+
+        border-radius: 50% 0 50% 50%;
+        opacity: 70%;
+
+        &.flame1 {
+          bottom: 14%;
+
+          background-color: var(--colour-fire-red);
+          box-shadow: 0px 0px 30px 10px var(--colour-fire-red);
+          height: 70%;
+          width: 70%;
+
+          animation: flame-flicker var(--transition-timing-long) 0.1s infinite alternate forwards var(--transition-function-flicker);
+
+          transform: rotate(-45deg) translate(-37%, -37%);
+        }
+
+        &.flame2 {
+          bottom: 14%;
+
+          background-color: var(--colour-fire-orange);
+          box-shadow: 0px 0px 30px 10px var(--colour-fire-orange);
+          height: 45%;
+          width: 45%;
+
+          animation: flame-flicker var(--transition-timing-long) 0.3s infinite alternate forwards var(--transition-function-flicker);
+
+          transform: rotate(-45deg) translate(-37%, -37%);
+        }
+
+        &.flame3 {
+          bottom: 14%;
+
+          background-color: var(--colour-fire-yellow);
+          box-shadow: 0px 0px 30px 10px var(--colour-fire-yellow);
+          height: 20%;
+          width: 20%;
+
+          animation: flame-flicker var(--transition-timing-long) 0.2s infinite alternate forwards var(--transition-function-flicker);
+
+          transform: rotate(-45deg) translate(-37%, -37%);
+        }
+      }
+    }
+
+    p {
+      background: var(--colour-card);
+      border-radius: var(--border-radius);
+      color: var(--colour-text);
+      font-size: var(--font-size-lg);
+      margin: var(--spacing) auto;
+      padding: var(--spacing-sm);
+    }
+  }
+}

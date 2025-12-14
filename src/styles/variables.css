@@ -1,11 +1,24 @@
 :root {
-  --colour-bg:              #FFFFFF;
-  --colour-text:            #333333;
-  --colour-text-light:      #FFFFFF;
+  --colour-bg:              #F9FAFB;
+  --colour-bg-dark:         #040404;
+  --colour-text:            #0B1215;
+  --colour-text-light:      #F9FAFB;
   --colour-text-disabled:   #888888;
   --colour-accent:          #4c82d9;
   --colour-accent-alt:      #2c589e;
   --colour-accent-disabled: #9bb9eb;
+
+  --colour-card:            rgba(249, 250, 251, 0.75);
+  --colour-card-dark:       rgba(11, 18, 21, 0.5);
+
+  --colour-fire-yellow:     #E3C412;
+  --colour-fire-orange:     #C47C10;
+  --colour-fire-red:        #BF2626;
+
+  --colour-log-border:       #3b2411;
+  --colour-log-dark:         #523823;
+  --colour-log-light:        #63462e;
+  --colour-log-end:          #b08d78;
 
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -32,6 +45,52 @@
   --z-index-above:     10;
   --z-index-priority:  9001;
 
-  --transition-default-timing: 0.3s;
-  --transition: var(--transition-default-timing) ease;
+  --transition-function-default: ease;
+  /* Borrowed from https://easingwizard.com/ */
+  /* --transition-function-flicker: linear(0, 0.763 3.4%, 0.936 4.8%, 0.991 6.1%, 0.94 7.4%, 0.776 8.8%, -0.549 15.1%, -0.77 16.7%, -0.86 18.3%, -0.83 19.6%, -0.702 21%, 0.435 27.5%, 0.615 29.1%, 0.687 30.7%, 0.663 32%, 0.561 33.4%, -0.292 39.7%, -0.44 41.4%, -0.497 43%, -0.482 44.3%, -0.418 45.6%, 0.171 51.9%, 0.274 53.6%, 0.316 55.2%, 0.309 56.5%, 0.271 57.8%, -0.078 64%, -0.138 65.6%, -0.165 67.2%, -0.165 68.5%, -0.146 69.8%, 0.017 75.7%, 0.06 78.8%, 0.057 81.4%, 0.007 86.5%, -0.008 89.2%, 0); */
+  --transition-function-flicker: linear(
+      0, 0.763 3.4%,
+      0.936 4.8%,
+      0.691 6.1%,
+      0.94 7.4%,
+      0.776 8.8%,
+      -0.549 15.1%,
+      -0.77 16.7%,
+      -0.86 18.3%,
+      -0.83 19.6%,
+      -0.702 21%,
+      0.435 27.5%,
+      0.615 29.1%,
+      0.687 30.7%,
+      0.663 32%,
+      0.561 33.4%,
+      -0.292 39.7%,
+      -0.44 41.4%,
+      0.497 43%,
+      -0.482 44.3%,
+      -0.418 45.6%,
+      0.171 51.9%,
+      0.274 53.6%,
+      0.116 55.2%,
+      0.309 56.5%,
+      0.271 57.8%,
+      -0.078 64%,
+      -0.138 65.6%,
+      -0.165 67.2%,
+      -0.165 68.5%,
+      -0.146 69.8%,
+      0.017 75.7%,
+      0.06 78.8%,
+      0.057 81.4%,
+      0.35 86.5%,
+      0.008 87.2%,
+      -0.038 89.2%,
+      -0.058 91.5%,
+      0
+    );
+
+  --transition-timing-default: 0.3s;
+  --transition-timing-long: 1.4s;
+
+  --transition: var(--transition-timing-default) var(--transition-function-default);
 }

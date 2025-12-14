@@ -1,0 +1,19 @@
+@keyframes flame-flicker {
+  from {
+    transform: rotate(-45deg) translate(-37%, -37%) scale(1.0, 1.0);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-37%, -37%) scale(1.05, 1.05);
+  }
+}
+
+@keyframes hearth-glow {
+  from {
+    --hearth-glow-boundary-1: 10%;
+    --hearth-glow-boundary-2: 32%;
+  }
+  to {
+    --hearth-glow-boundary-1: 15%;
+    --hearth-glow-boundary-2: 35%;
+  }
+}

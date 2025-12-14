@@ -52,6 +52,14 @@
           "children": []
         }
       ]
+    },
+    {
+      "label": "404",
+      "canNavigate": false,
+      "excludeFromNav": true,
+      "path": "404",
+      "title": "404: Page Not Found",
+      "children": []
     }
   ]
 }

@@ -20,7 +20,15 @@ export namespace Setup {
 
     Navigation.loadSitemap(sitemap);
 
-    Navigation.navigate(Navigation.getPage(window.location.pathname));
+    try {
+      Navigation.navigate(Navigation.getPage(window.location.pathname));
+    }
+    catch (error) {
+      // DEBUG
+      console.log(Navigation.getPage("404"));
+
+      Navigation.navigate(Navigation.getPage("404"));
+    }
 
     window.onload = () => {
 
