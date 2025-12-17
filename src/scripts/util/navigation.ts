@@ -4,7 +4,6 @@ import { delay, getAbsolutePath } from "./helpers";
 import { ElementIds } from "../enums/element-ids";
 
 import { Page } from "../types/page";
-import { Script } from "../types/script";
 import { Setup } from "../setup";
 
 
@@ -125,32 +124,40 @@ export namespace Navigation {
   /**
    * Creates a tree of navigation markup for injecting into a nav container when a partial is loaded.
    * 
-   * Note that this will generate an empty tree if a node is node excluded but all of its children are.
+   * Note that this will generate an empty tree if a node is not excluded but all of its children are.
    */
   function _generateNavMarkup(pages: Array<Page>): string {
-    let output: string = "<ul>";
+    let tagName: string;
+    let output: string = `
+<input id="${ElementIds.NavigationTrigger}" type="checkbox" class="sr-only" />
+<label id="${ElementIds.NavigationTriggerLabel}" for="${ElementIds.NavigationTrigger}"></label>
+<ul>
+  <li>
+    <label id="${ElementIds.NavigationTriggerLabel}" for="${ElementIds.NavigationTrigger}"></label>
+  </li>
+`;
 
     pages.forEach((page: Page) => {
-      if (!page.excludeFromNav) {
 
-        let tagName = page.canNavigate ? `a role="button" href="${page.path}" data-target="${page.path?.split("/").pop()}"` : "span";
+      if (!page.excludeFromNav) {
+        tagName = page.canNavigate ? `a role="button" href="${page.path}" data-target="${page.path?.split("/").pop()}"` : "span";
 
         if (page.canNavigate && page.external) {
           tagName += ` target="_blank"`;
         }
 
         output +=
-`<li>
-  <${tagName}>
-    ${page.label}
-  </${tagName}>
-
-  ${page.children?.length ? _generateNavMarkup(page.children) : ""}
-</li>`;
+`  <li>
+    <${tagName}>
+      ${page.label}
+    </${tagName}>
+  
+    ${page.children?.length ? _generateNavMarkup(page.children) : ""}
+  </li>`;
       }
     });
 
-    output += "</ul>";
+    output += `</ul>`;
 
     return output;
   }

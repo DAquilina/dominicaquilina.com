@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && vite build && cp -R src/html dist/html",
     "clean": "rm -rf ./dist",
-    "dev": "npx vite"
+    "dev": "npx vite --port 9001"
   },
   "devDependencies": {
     "vite": "^7.2.6"

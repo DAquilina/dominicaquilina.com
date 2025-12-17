@@ -5,6 +5,10 @@ html,
 body {
   font-family: Funnel Display, sans-serif;
   font-size: var(--font-size-md);
+
+  @media only screen and (max-width: 600px) {
+    font-size: var(--font-size-mobile-md);
+  }
 }
 
 h1,
@@ -16,16 +20,31 @@ h3 {
 h1 {
   font-size: var(--font-size-xxl);
   margin: var(--spacing-lg);
+
+  @media only screen and (max-width: 600px) {
+    font-size: var(--font-size-xl);
+    margin: var(--spacing);
+  }
 }
 
 h2 {
   font-size: var(--font-size-xl);
   margin: var(--spacing-lg) var(--spacing);
+
+  @media only screen and (max-width: 600px) {
+    font-size: var(--font-size-lg);
+    margin: var(--spacing);
+  }
 }
 
 h3 {
   font-size: var(--font-size-lg);
   margin: var(--spacing);
+
+  @media only screen and (max-width: 600px) {
+    font-size: var(--font-size-mobile-lg);
+    margin: var(--spacing);
+  }
 }
 
 hr {
@@ -37,6 +56,10 @@ hr {
 p {
   margin: var(--spacing) auto;
   max-width: var(--constrain-md);
+
+  @media only screen and (max-width: 600px) {
+    margin: var(--spacing);
+  }
 }
 
 .chip {
@@ -49,12 +72,24 @@ p {
   margin-right: var(--spacing);
   padding: var(--spacing-sm) var(--spacing);
 
+  @media only screen and (max-width: 600px) {
+    font-size: var(--font-size-xs);
+  }
+
   &:last-child {
     margin-right: 0;
   }
 }
 
 /* ***** Interactive Elements ***** */
+*:active,
+*:focus,
+[type=checkbox]:active ~ label,
+[type=checkbox]:focus ~ label {
+  outline: 1px dashed var(--colour-accent);
+  outline-offset: var(--outline-buffer);
+}
+
 a {
   color: var(--colour-accent-alt);
   cursor: pointer;

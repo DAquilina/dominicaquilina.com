@@ -4,11 +4,24 @@
   position: relative;
 
   display: block;
+  padding: calc(var(--outline-buffer) + 2px);
   text-align: center;
   z-index: var(--z-index-above);
 
+  #nav-trigger-label {
+    background: var(--colour-accent) url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 7L4 7" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M20 12L4 12" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M20 17L4 17" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/></svg>');
+    background-size: contain;
+    border-radius: var(--border-radius);
+    display: none;
+    height: 25px;
+    width: 25px;
+
+    @media only screen and (max-width: 600px) {
+      display: inline-block;
+    }
+  }
+
   ul {
-    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,15 +29,22 @@
     li {
       display: inline-block;
 
+      @media only screen and (max-width: 600px) {
+        display: block;
+      }
+
       a,
       span {
         width: 100%;
 
-        &:active + ul,
-        &:focus + ul,
-        &:hover + ul {
+        &:active ~ ul,
+        &:focus ~ ul,
+        &:hover ~ ul {
           /* This is a magic number that is being used until Firefox and Safari support interpolate-size */
           max-height: 375px;
+
+          /* interpolate-size: allow-keywords; */
+          /* max-height: fit-content; */
         }
       }
 
@@ -56,8 +76,50 @@
     height: calc(2 * var(--spacing-sm) + var(--font-size-md) + 2px);
     overflow: visible;
 
+    @media only screen and (max-width: 600px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      background-color: var(--colour-bg-dark);
+      display: block;
+      height: auto;
+      max-height: 0;
+      max-width: 100%;
+      overflow: hidden;
+      padding: 0;
+      text-align: center;
+
+      transition: max-height var(--transition), padding var(--transition);
+
+      &::before {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        backdrop-filter: blur(2px);
+        content: " ";
+        display: none;
+      }
+    }
+
+    & > label {
+      position: relative;
+      z-index: var(--z-index-above);
+    }
+
     & > li {
+      position: relative;
       width: 150px;
+      z-index: var(--z-index-above);
+
+      @media only screen and (max-width: 600px) {
+        display: block;
+        width: 100%;
+      }
 
       & > a,
       & > span {
@@ -65,13 +127,39 @@
         border-radius: var(--border-radius);
         color: var(--colour-text-light);
 
+        @media only screen and (max-width: 600px) {
+          border-radius: 0;
+          margin: var(--spacing-xs) 0;
+          width: 90%;
+        }
+
         &:active,
         &:focus,
         &:hover {
           background-color: var(--colour-accent-alt);
-          text-decoration: none;
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #nav-trigger:checked ~ ul {
+      max-height: 100vh;
+      padding: var(--spacing-sm) 0;
+
+      &::before {
+        display: block;
+      }
+    }
+
+    #nav-trigger ~ ul > li > label {
+      margin: var(--outline-buffer);
+    }
+
+    #nav-trigger:active ~ ul > li > label,
+    #nav-trigger:focus ~ ul > li > label {
+      outline: 1px dashed var(--colour-accent);
+      outline-offset: var(--outline-buffer);
     }
   }
 }

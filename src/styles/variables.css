@@ -1,4 +1,5 @@
 :root {
+  --colour-backdrop:        rgba(0, 0, 0, 0.5);
   --colour-bg:              #F9FAFB;
   --colour-bg-dark:         #040404;
   --colour-text:            #0B1215;
@@ -25,12 +26,18 @@
   --spacing:    1rem;
   --spacing-lg: 2.5rem;
 
+  --outline-buffer: 3px;
+
   --font-size-xs:  8px;
   --font-size-sm:  10px;
   --font-size-md:  14px;
   --font-size-lg:  24px;
   --font-size-xl:  42px;
   --font-size-xxl: 60px;
+
+  /* Used specifically for shrinking copy in mobile while still distinguishing elements from the standard thresholds */
+  --font-size-mobile-md: 12px;
+  --font-size-mobile-lg: 18px;
 
   --border-radius: 5px;
 

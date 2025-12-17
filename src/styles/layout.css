@@ -1,9 +1,10 @@
 /* ***** Basic Page Structure ***** */
 #content {
-  position: absolute;
-  inset: 0;
+  position: fixed;
 
+  inset: 0;
   overflow: hidden;
+  z-index: var(--z-index-base);
 
   .content-inner-wrapper {
     position: absolute;
@@ -22,10 +23,11 @@ footer {
 
 /* ***** Containers ***** */
 .showcase-container {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
 
+  max-height: 100%;
   overflow: auto;
   text-align: center;
   width: 100%;

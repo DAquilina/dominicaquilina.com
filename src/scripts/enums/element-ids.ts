@@ -8,5 +8,6 @@ export enum ElementIds {
   NavigationChildren = "nav-children-container",
   NavigationCloseButton = "nav-button-close",
   NavigationTrigger = "nav-trigger",
+  NavigationTriggerLabel = "nav-trigger-label",
   SocialMediaContentContainer = "media"
 }
