@@ -121,6 +121,12 @@
         width: 100%;
       }
 
+      @media (min-width: 600px) {
+        &:first-child {
+          display: none;
+        }
+      }
+
       & > a,
       & > span {
         background-color: var(--colour-accent);
