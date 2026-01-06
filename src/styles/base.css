@@ -3,6 +3,8 @@
 /* ***** Passive Elements ***** */
 html,
 body {
+  background-color: var(--colour-bg);
+  color: var(--colour-text);
   font-family: Funnel Display, sans-serif;
   font-size: var(--font-size-md);
 

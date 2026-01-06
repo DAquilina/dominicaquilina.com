@@ -1,5 +1,3 @@
-import { Script } from "./script";
-
 export type Page = {
   canNavigate: boolean;
   children: Array<Page>;

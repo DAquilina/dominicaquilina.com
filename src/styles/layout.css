@@ -28,7 +28,7 @@ footer {
   top: 50%;
 
   max-height: 100%;
-  overflow: auto;
+  overflow: visible;
   text-align: center;
   width: 100%;
 

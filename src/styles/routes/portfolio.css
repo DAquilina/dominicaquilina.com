@@ -1,0 +1,54 @@
+@import "../variables.css";
+
+[data-route="portfolio"] {
+  .portfolio-items {
+    margin: var(--spacing-lg) auto;
+    max-width: var(--constrain-md);
+
+    .portfolio-item {
+      position: relative;
+
+      border: 1px solid var(--colour-text);
+      border-radius: var(--border-radius);
+      margin-bottom: var(--spacing);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & > aside {
+        font-style: italic;
+        padding: var(--spacing-sm);
+      }
+
+      & > .description {
+        margin: 0;
+        padding: var(--spacing-sm);
+      }
+
+      & > .link {
+        position: absolute;
+        right: var(--spacing);
+        top: var(--spacing);
+
+        background-image: url(../../assets/icons/material_open-new.svg);
+        background-size: contain;
+
+        display: inline-block;
+        height: var(--font-size-md);
+        width: var(--font-size-md);
+
+        &[download] {
+          background-image: url(../../assets/icons/material_download.svg);
+          background-size: contain;
+        }
+      }
+
+      & > .name {
+        background-color: var(--colour-bg-dark);
+        color: var(--colour-text-light);
+        padding: var(--spacing);
+      }
+    }
+  }
+}

@@ -8,8 +8,27 @@
   text-align: center;
   z-index: var(--z-index-above);
 
+  &.dark {
+    & > ul {
+      background-color: var(--colour-bg-dark);
+    }
+  }
+
+  &.expand-up {
+    & > ul {
+      bottom: 0;
+      top: auto;
+
+      ul {
+        top: -100%;
+
+        transform: translateY(-100%);
+      }
+    }
+  }
+
   #nav-trigger-label {
-    background: var(--colour-accent) url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 7L4 7" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M20 12L4 12" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M20 17L4 17" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/></svg>');
+    background: var(--colour-accent) url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 7L4 7" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M20 12L4 12" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M20 17L4 17" stroke="%23FFFFFF" stroke-width="1.5" stroke-linecap="round"/></svg>');
     background-size: contain;
     border-radius: var(--border-radius);
     display: none;
@@ -28,6 +47,7 @@
 
     li {
       display: inline-block;
+      width: 100%;
 
       @media only screen and (max-width: 600px) {
         display: block;
@@ -35,6 +55,9 @@
 
       a,
       span {
+        background-color: var(--colour-accent);
+        color: var(--colour-text-light);
+        display: inline-block;
         width: 100%;
 
         &:active ~ ul,
@@ -49,23 +72,50 @@
       }
 
       span {
-        display: inline-block;
         padding: var(--spacing-sm) var(--spacing);
       }
     }
 
     ul {
-      background-color: var(--colour-accent-disabled);
+      position: relative;
+
+      background-color: var(--colour-accent);
       border-radius: var(--border-radius);
       max-height: 0px;
       overflow: hidden;
 
       transition: max-height var(--transition);
 
+      /* We don't want to use nested nav in a mobile view since each top will have inline links to the children */
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+
       &:active,
       &:focus,
+      &:focus-within,
       &:hover {
         max-height: 375px;
+
+        /* interpolate-size: allow-keywords; */
+        /* max-height: fit-content; */
+      }
+
+      li {
+        a {
+          &:active,
+          &:focus,
+          &:hover {
+            background-color: var(--colour-accent-alt);
+          }
+        }
+      }
+
+      li:focus-within {
+        a,
+        span {
+          background-color: var(--colour-accent-alt);
+        }
       }
     }
   }
@@ -78,11 +128,12 @@
 
     @media only screen and (max-width: 600px) {
       position: absolute;
-      bottom: 0;
+      bottom: auto;
       left: 0;
       right: 0;
+      top: 0;
 
-      background-color: var(--colour-bg-dark);
+      background-color: var(--colour-bg);
       display: block;
       height: auto;
       max-height: 0;
@@ -113,6 +164,7 @@
 
     & > li {
       position: relative;
+
       width: 150px;
       z-index: var(--z-index-above);
 
@@ -129,16 +181,16 @@
 
       & > a,
       & > span {
-        background-color: var(--colour-accent);
         border-radius: var(--border-radius);
-        color: var(--colour-text-light);
 
         @media only screen and (max-width: 600px) {
           border-radius: 0;
           margin: var(--spacing-xs) 0;
           width: 90%;
         }
+      }
 
+      & > a {
         &:active,
         &:focus,
         &:hover {

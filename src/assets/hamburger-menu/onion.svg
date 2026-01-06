@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="113mm"
+   height="113mm"
+   viewBox="0 0 113 113"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="onion.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.82535219"
+     inkscape:cx="272.6109"
+     inkscape:cy="189.01022"
+     inkscape:window-width="1264"
+     inkscape:window-height="1017"
+     inkscape:window-x="10"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Onion"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.3590679,4.0261225)">
+    <g
+       id="g1"
+       inkscape:label="Ring 1">
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#813a45;stroke-width:9.74048;stroke-dasharray:none;stroke-opacity:1"
+         id="path1"
+         cx="-18.303396"
+         cy="90.895294"
+         rx="42.772247"
+         ry="33.994205"
+         transform="matrix(0.93866832,-0.34482139,0.82292801,0.56814566,0,0)"
+         inkscape:label="Onion Base 1" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#813a45;stroke-width:9.74048;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-8"
+         cx="-15.832063"
+         cy="87.94368"
+         rx="42.772247"
+         ry="33.994205"
+         transform="matrix(0.93866832,-0.34482139,0.82292801,0.56814566,0,0)"
+         inkscape:label="Onion Base 2" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#e0c1d0;stroke-width:9.46493;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-8-5"
+         cx="-16.676405"
+         cy="88.922699"
+         rx="41.709225"
+         ry="32.912987"
+         transform="matrix(0.94254941,-0.33406677,0.83226464,0.55437854,0,0)"
+         inkscape:label="Inner" />
+    </g>
+    <g
+       id="g2"
+       inkscape:label="Ring 2"
+       transform="matrix(0.83257079,-0.07284051,0.07011859,0.80145911,16.78655,5.0039089)">
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#813a45;stroke-width:9.74048;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-3"
+         cx="-18.303396"
+         cy="90.895294"
+         rx="42.772247"
+         ry="33.994205"
+         transform="matrix(0.93866832,-0.34482139,0.82292801,0.56814566,0,0)"
+         inkscape:label="Onion Base 1" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#813a45;stroke-width:9.74048;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-8-9"
+         cx="-15.832063"
+         cy="87.94368"
+         rx="42.772247"
+         ry="33.994205"
+         transform="matrix(0.93866832,-0.34482139,0.82292801,0.56814566,0,0)"
+         inkscape:label="Onion Base 2" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#e0c1d0;stroke-width:9.46493;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-8-5-4"
+         cx="-16.676405"
+         cy="88.922699"
+         rx="41.709225"
+         ry="32.912987"
+         transform="matrix(0.94254941,-0.33406677,0.83226464,0.55437854,0,0)"
+         inkscape:label="Inner" />
+    </g>
+    <g
+       id="g2-2"
+       inkscape:label="Ring 3"
+       transform="matrix(0.74520404,0.06967013,-0.05427931,0.66963398,8.0375516,-2.3879561)">
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#813a45;stroke-width:9.74048;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-3-2"
+         cx="-18.303396"
+         cy="90.895294"
+         rx="42.772247"
+         ry="33.994205"
+         transform="matrix(0.93866832,-0.34482139,0.82292801,0.56814566,0,0)"
+         inkscape:label="Onion Base 1" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#813a45;stroke-width:9.74048;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-8-9-2"
+         cx="-15.832063"
+         cy="87.94368"
+         rx="42.772247"
+         ry="33.994205"
+         transform="matrix(0.93866832,-0.34482139,0.82292801,0.56814566,0,0)"
+         inkscape:label="Onion Base 2" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#e0c1d0;stroke-width:9.46493;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-8-5-4-4"
+         cx="-16.676405"
+         cy="88.922699"
+         rx="41.709225"
+         ry="32.912987"
+         transform="matrix(0.94254941,-0.33406677,0.83226464,0.55437854,0,0)"
+         inkscape:label="Inner" />
+    </g>
+  </g>
+</svg>

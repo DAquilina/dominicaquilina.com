@@ -39,9 +39,14 @@ export namespace Navigation {
   export function getPage(pathname: string): Page {
     let resolvedPath = pathname === "/" ? "home" : pathname;
 
+    // DEBUG
+    console.log(pathname);
+
     if (resolvedPath[0] === "/") {
       resolvedPath = resolvedPath.slice(1);
     }
+
+    resolvedPath = resolvedPath.split("/").pop() ?? "home";
 
     const targetPage = pageMap.get(resolvedPath);
 
@@ -52,45 +57,55 @@ export namespace Navigation {
     return targetPage;
   }
 
+  export function getPageId(page: Page): string | undefined {
+
+    return ((page.canNavigate && !page.external) ? page.path!.split("/").pop() : page.label.toLowerCase());
+  }
+
   export function loadPage(page: Page){
 
     Dom.toggleAttributeOnElement("body", "data-loading");
 
-    loadPartials(
-      [getAbsolutePath(`/src/html/routes/${page.id}.partial.html`)]
-    ).then(
-      async ([targetHtml]) => {
+    if (page.external) {
+      window.open(page.path, "_blank");
+    }
+    else {
+      loadPartials(
+        [getAbsolutePath(`/src/html/routes/${page.id}.partial.html`)]
+      ).then(
+        async ([targetHtml]) => {
 
-        new MutationObserver(
-          async (mutationList, observer) => {
+          new MutationObserver(
+            async (mutationList, observer) => {
 
-            Dom.setAttributeOnElement("content", "data-route", page.id!);
+              Dom.setAttributeOnElement("content", "data-route", page.id!);
 
-            while (document.readyState !== "complete") {
-              await delay(10);
+              while (document.readyState !== "complete") {
+                await delay(10);
+              }
+
+              if (page.bootstrapFunction) {
+                Setup[page.bootstrapFunction as keyof typeof Setup]?.();
+              }
+
+              Navigation.bootstrapNav();
+
+              observer.disconnect();
             }
+          ).observe(
+            document.getElementById("content") as Node,
+            { childList: true }
+          );
 
-            if (page.bootstrapFunction) {
-              Setup[page.bootstrapFunction as keyof typeof Setup]?.();
-            }
+          Dom.toggleAttributeOnElement("body", "data-loading");
 
-            Navigation.bootstrapNav();
+          Dom.injectHTML(ElementIds.MainContentContainer, await targetHtml.text());
+        },
+        async () => {
 
-            observer.disconnect();
-          }
-        ).observe(
-          document.getElementById("content") as Node,
-          { childList: true }
-        );
-
-        Dom.toggleAttributeOnElement("body", "data-loading");
-
-        Dom.injectHTML(ElementIds.MainContentContainer, await targetHtml.text());
-      },
-      async () => {
-
-      }
-    );
+        }
+      );
+    }
   }
 
 
@@ -106,9 +121,9 @@ export namespace Navigation {
 
   export async function loadSitemap(root: Page): Promise<void> {
 
-    navigationMarkup = _generateNavMarkup(root.children);
-
     _generatePageMap(root);
+
+    navigationMarkup = _generateNavMarkup(root.children);
   }
 
 
@@ -126,21 +141,38 @@ export namespace Navigation {
    * 
    * Note that this will generate an empty tree if a node is not excluded but all of its children are.
    */
-  function _generateNavMarkup(pages: Array<Page>): string {
+  function _generateNavMarkup(pages: Array<Page>, depth: number = 0): string {
     let tagName: string;
-    let output: string = `
+    let output: string = ``;
+    
+    if (depth === 0) {
+      output += `
 <input id="${ElementIds.NavigationTrigger}" type="checkbox" class="sr-only" />
 <label id="${ElementIds.NavigationTriggerLabel}" for="${ElementIds.NavigationTrigger}"></label>
+`
+    }
+
+    output += `
 <ul>
+`;
+
+    if (depth === 0) {
+      output += `
   <li>
     <label id="${ElementIds.NavigationTriggerLabel}" for="${ElementIds.NavigationTrigger}"></label>
   </li>
-`;
+`
+    }
 
     pages.forEach((page: Page) => {
 
       if (!page.excludeFromNav) {
-        tagName = page.canNavigate ? `a role="button" href="${page.path}" data-target="${page.path?.split("/").pop()}"` : "span";
+        if (!page.canNavigate) {
+          tagName = "span";
+        }
+        else {
+          tagName = `a role="button" href="${page.external ? "" : "/"}${page.path}" data-target="${getPageId(page)}"`;
+        }
 
         if (page.canNavigate && page.external) {
           tagName += ` target="_blank"`;
@@ -152,8 +184,9 @@ export namespace Navigation {
       ${page.label}
     </${tagName}>
   
-    ${page.children?.length ? _generateNavMarkup(page.children) : ""}
-  </li>`;
+    ${page.children?.length ? _generateNavMarkup(page.children, depth + 1) : ""}
+  </li>
+`;
       }
     });
 
@@ -169,7 +202,7 @@ export namespace Navigation {
       {},
       page,
       {
-        id: ((page.canNavigate && !page.external) ? page.path!.split("/").pop() : page.label.toLowerCase()) || "home"
+        id: getPageId(page) || "home"
       }
     );
 
