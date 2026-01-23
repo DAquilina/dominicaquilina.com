@@ -12,6 +12,15 @@
 
     overflow: hidden auto;
     padding: var(--spacing);
+
+    & > aside {
+      margin: var(--spacing) auto;
+      max-width: var(--constrain-md);
+
+      @media only screen and (max-width: 600px) {
+        margin: var(--spacing);
+      }
+    }
   }
 }
 

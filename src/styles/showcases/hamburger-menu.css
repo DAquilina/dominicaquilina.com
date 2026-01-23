@@ -2,160 +2,162 @@
 @import "./hamburger-menu.variables.css";
 
 
-/* ********** INGREDIENTS ************ */
+[data-route=hamburger-menu] {
+  /* ********** INGREDIENTS ************ */
 
-.ingredient-icon {
-  display: block;
-  height: var(--nav-icon-height);
-  margin: 0 auto var(--spacing-sm);
-  width: var(--nav-icon-width);
-  z-index: var(--z-index-overlay-item);
-
-  &.back {
-    background: transparent url(/hamburger-menu/icon-back.svg) no-repeat center center;
-    background-size: contain;
-
-    transform: scale(0.75);
-  }
-
-  &.bacon {
-    background: transparent url(/hamburger-menu/bacon.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.cheese {
-    background: transparent url(/hamburger-menu/cheese.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.egg {
-    background: transparent url(/hamburger-menu/egg.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.lettuce {
-    background: transparent url(/hamburger-menu/lettuce.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.onion {
-    background: transparent url(/hamburger-menu/onion.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.splatter-ketchup {
-    background: transparent url(/hamburger-menu/splatter-ketchup.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.splatter-mayo {
-    background: transparent url(/hamburger-menu/splatter-mayo.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.splatter-mustard {
-    background: transparent url(/hamburger-menu/splatter-mustard.svg) no-repeat center center;
-    background-size: contain;
-  }
-
-  &.tomato {
-    background: transparent url(/hamburger-menu/tomato.svg) no-repeat center center;
-    background-size: contain;
-  }
-}
-
-/* ********** TRIGGER ********** */
-
-#hamburger-nav {
-  position: relative;
-
-  display: block;
-  height: calc(2 * var(--spacing) + var(--nav-trigger-resolved-height));
-  margin: var(--spacing) auto;
-  max-width: var(--view-width);
-
-  #hamburger-nav-trigger {
-    position: relative;
-    top: 50%;
-
-    height: var(--nav-trigger-resolved-height);
-    width: var(--nav-trigger-width);
+  .ingredient-icon {
+    display: block;
+    height: var(--nav-icon-height);
+    margin: 0 auto var(--spacing-sm);
+    width: var(--nav-icon-width);
     z-index: var(--z-index-overlay-item);
 
-    transform: translateY(-50%);
+    &.back {
+      background: transparent url(/hamburger-menu/icon-back.svg) no-repeat center center;
+      background-size: contain;
+
+      transform: scale(0.75);
+    }
+
+    &.bacon {
+      background: transparent url(/hamburger-menu/bacon.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.cheese {
+      background: transparent url(/hamburger-menu/cheese.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.egg {
+      background: transparent url(/hamburger-menu/egg.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.lettuce {
+      background: transparent url(/hamburger-menu/lettuce.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.onion {
+      background: transparent url(/hamburger-menu/onion.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.splatter-ketchup {
+      background: transparent url(/hamburger-menu/splatter-ketchup.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.splatter-mayo {
+      background: transparent url(/hamburger-menu/splatter-mayo.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.splatter-mustard {
+      background: transparent url(/hamburger-menu/splatter-mustard.svg) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.tomato {
+      background: transparent url(/hamburger-menu/tomato.svg) no-repeat center center;
+      background-size: contain;
+    }
   }
 
-  &.open #hamburger-nav-children-container {
-    height: calc(var(--nav-overlay-radius) * 2);
-    opacity: 1.0;
-    width: calc(var(--nav-overlay-radius) * 2);
+  /* ********** TRIGGER ********** */
 
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
+  #hamburger-nav {
+    position: relative;
 
-  #hamburger-nav-children-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    display: block;
+    height: calc(2 * var(--spacing) + var(--nav-trigger-resolved-height));
+    margin: var(--spacing) auto;
+    max-width: var(--view-width);
 
-    background: radial-gradient(
-        circle at center,
-        transparent,
-        transparent 23%,
-        var(--colour-backdrop) 23%
-      );
-    border-radius: 100%;
-    height: 0;
-    overflow: hidden;
-    pointer-events: none;
-    opacity: 0.0;
-    width: 0;
-    z-index: var(--z-index-overlay);
+    #hamburger-nav-trigger {
+      position: relative;
+      top: 50%;
 
-    transform: translate(-50%, -50%) rotate(-360deg);
+      height: var(--nav-trigger-resolved-height);
+      width: var(--nav-trigger-width);
+      z-index: var(--z-index-overlay-item);
 
-    transition: all var(--nav-icon-animation-duration) ease;
+      transform: translateY(-50%);
+    }
 
-    .hamburger-nav-child-link {
+    &.open #hamburger-nav-children-container {
+      height: calc(var(--nav-overlay-radius) * 2);
+      opacity: 1.0;
+      width: calc(var(--nav-overlay-radius) * 2);
+
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    #hamburger-nav-children-container {
       position: absolute;
       left: 50%;
       top: 50%;
 
-      border-radius: var(--border-radius);
-      color: var(--colour-text-light);
-      display: inline-block;
-      height: calc(2 * var(--spacing-sm) + 70px);
+      background: radial-gradient(
+          circle at center,
+          transparent,
+          transparent 23%,
+          var(--colour-backdrop) 23%
+        );
+      border-radius: 100%;
+      height: 0;
+      overflow: hidden;
+      pointer-events: none;
       opacity: 0.0;
-      padding: var(--spacing-sm);
-      pointer-events: all;
-      text-align: center;
-      text-decoration: none;
-      width: calc(2 * var(--spacing-sm) + 70px);
+      width: 0;
+      z-index: var(--z-index-overlay);
 
-      transform: scale(0.0) translate(-50%, -50%);
+      transform: translate(-50%, -50%) rotate(-360deg);
 
-      transition:
-        transform var(--nav-icon-animation-duration) ease,
-        opacity var(--nav-icon-opacity-animation-duration) ease calc(var(--i) * 0.05s),
-        background-color var(--transition);
+      transition: all var(--nav-icon-animation-duration) ease;
 
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: var(--nav-icon-colour-active);
-        outline: none;
-      }
+      .hamburger-nav-child-link {
+        position: absolute;
+        left: 50%;
+        top: 50%;
 
-      & > span {
-        display: block;
-        overflow: hidden;
-        width: 100%;
-      }
+        border-radius: var(--border-radius);
+        color: var(--colour-text-light);
+        display: inline-block;
+        height: calc(2 * var(--spacing-sm) + 70px);
+        opacity: 0.0;
+        padding: var(--spacing-sm);
+        pointer-events: all;
+        text-align: center;
+        text-decoration: none;
+        width: calc(2 * var(--spacing-sm) + 70px);
 
-      .navigation-child-link-label {
-        height: 1em;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        transform: scale(0.0) translate(-50%, -50%);
+
+        transition:
+          transform var(--nav-icon-animation-duration) ease,
+          opacity var(--nav-icon-opacity-animation-duration) ease calc(var(--i) * 0.05s),
+          background-color var(--transition);
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: var(--nav-icon-colour-active);
+          outline: none;
+        }
+
+        & > span {
+          display: block;
+          overflow: hidden;
+          width: 100%;
+        }
+
+        .navigation-child-link-label {
+          height: 1em;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
       }
     }
   }

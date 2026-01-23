@@ -80,6 +80,13 @@
           "children": []
         },
         {
+          "canNavigate": true,
+          "label": "Graphic Design Gallery",
+          "path": "portfolio/gallery",
+          "title": "Graphic design fun and function",
+          "children": []
+        },
+        {
           "canNavigate": false,
           "label": "MindGame",
           "path": "portfolio/mindgame",
