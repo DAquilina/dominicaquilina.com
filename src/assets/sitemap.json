@@ -3,6 +3,7 @@
   "canNavigate": false,
   "children": [
     {
+      "bootstrapFunction": "bootstrapHome",
       "canNavigate": true,
       "label": "Home",
       "path": "home",
@@ -63,16 +64,13 @@
           "children": []
         },
         {
+          "bootstrapFunction": "bootstrapHamburgerMenu",
           "canNavigate": true,
           "label": "Hamburger Menu",
           "path": "portfolio/hamburger",
           "title": "Sinking my teeth into a really terrible pun",
           "children": [],
-          "scripts": [
-            {
-              "path": "../../pages/hamburger-menu/scripts/hamburger-menu.mjs"
-            }
-          ]
+          "scripts": []
         },
         {
           "canNavigate": true,
@@ -98,6 +96,7 @@
       "children": []
     },
     {
+      "bootstrapFunction": "bootstrapHome",
       "canNavigate": true,
       "label": "Experience",
       "path": "experience",

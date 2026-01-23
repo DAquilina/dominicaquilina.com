@@ -1,0 +1,180 @@
+{
+  "id": "root",
+  "label": "root",
+  "canNavigate": false,
+  "children": [
+    {
+      "canNavigate": true,
+      "id": "home",
+      "label": "Home",
+      "path": "home",
+      "title": "There's no place like home",
+      "children": []
+    },
+    {
+      "canNavigate": false,
+      "id": "menu",
+      "label": "Menu",
+      "path": "menu",
+      "title": "Satisfy your curiosity... and your hunger!",
+      "children": [
+        {
+          "canNavigate": false,
+          "id": "drinks",
+          "label": "Drinks",
+          "path": "menu/drinks",
+          "title": "Something to excite the tongue before, during, and/or after your meal!",
+          "children": [
+            {
+              "canNavigate": true,
+              "id": "alcohol",
+              "label": "Alcoholic",
+              "path": "menu/drinks/alcohol",
+              "title": "A touch of the stronger stuff",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "soft",
+              "label": "Soft Drinks",
+              "path": "menu/drinks/soft",
+              "title": "Give your meal a little *sparkle*",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "milkshakes",
+              "label": "Milkshakes",
+              "path": "menu/drinks/milkshakes",
+              "title": "Come taste the sweet treat that put B-Shack on the map!",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "caffeine",
+              "label": "Coffee and Tea",
+              "path": "menu/drinks/caffeine",
+              "title": "Hot drinks to keep you warm and alert",
+              "children": []
+            }
+          ]
+        },
+        {
+          "canNavigate": false,
+          "id": "mains",
+          "label": "Mains",
+          "path": "menu/mains",
+          "title": "Truly authentic dishes to fill your belly and warm your soul",
+          "children": [
+            {
+              "canNavigate": true,
+              "id": "burgers",
+              "label": "Burgers",
+              "path": "menu/mains/burgers",
+              "title": "We know what you really came here for",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "chicken",
+              "label": "Chicken",
+              "path": "menu/mains/chicken",
+              "title": "Farm-raised and tender or crispy, as you like",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "classics",
+              "label": "Homestyle Classics",
+              "path": "menu/mains/classics",
+              "title": "A few traditional favourites for those that didn't want to eat at a burger place tonight",
+              "children": []
+            }
+          ]
+        },
+        {
+          "canNavigate": false,
+          "id": "sides",
+          "label": "Sides",
+          "path": "menu/sides",
+          "title": "Would you like fries with that?",
+          "children": [
+            {
+              "canNavigate": true,
+              "id": "fries",
+              "label": "Fries",
+              "path": "menu/sides/fries",
+              "title": "Curly? Shoestring? We've got you covered",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "rings",
+              "label": "Rings",
+              "path": "menu/sides/rings",
+              "title": "Surf and turf, except you get to choose between onions and calamari",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "salads",
+              "label": "Salads",
+              "path": "menu/sides/salads",
+              "title": "You can tell your mom you had vegetables that weren't potatoes today!",
+              "children": []
+            }
+          ]
+        },
+        {
+          "canNavigate": false,
+          "id": "desserts",
+          "label": "Desserts",
+          "path": "menu/desserts",
+          "title": "Something sweet",
+          "children": [
+            {
+              "canNavigate": true,
+              "id": "ice-cream",
+              "label": "Ice Cream",
+              "path": "menu/desserts/ice-cream",
+              "title": "Cold, creamy, and made in-house!",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "floats",
+              "label": "Floats",
+              "path": "menu/desserts/floats",
+              "title": "Same great ice cream, served with your choice of fizzy",
+              "children": []
+            },
+            {
+              "canNavigate": true,
+              "id": "pies",
+              "label": "Pies",
+              "path": "menu/desserts/pies",
+              "title": "World-famous pies straight from our ovens... or fridges, depending on the pie",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "About Us",
+      "id": "about",
+      "canNavigate": true,
+      "path": "about",
+      "title": "Learn the history of our great restaurant!",
+      "children": []
+    },
+    {
+      "label": "Contact",
+      "id": "contact",
+      "canNavigate": true,
+      "path": "contact",
+      "title": "How to get in touch",
+      "children": []
+    }
+  ]
+}

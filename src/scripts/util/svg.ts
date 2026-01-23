@@ -7,17 +7,17 @@ export namespace SVG {
    */
   export async function embedStylesheetInSVG(svgRoot: Document, stylesheetPath: string) {
 
-    const svgStylesheet = await fetch(stylesheetPath);
+    const svgStylesheet = await fetch(`${stylesheetPath}?raw`);
 
     let styleSheetText = await svgStylesheet.text();
-    
+
     for (let key in HAMBURGER_ELEMENT_IDS) {
       styleSheetText = styleSheetText.replaceAll(`[${key}]`,`#${HAMBURGER_ELEMENT_IDS[key]}`);
     }
 
     styleSheetText = styleSheetText.replaceAll(`[burgerTranslationSize]`, `${HAMBURGER_ANIMATION_DEFAULTS.offset}px`);
     styleSheetText = styleSheetText.replaceAll(`[burgerTranslationDuration]`, `${HAMBURGER_ANIMATION_DEFAULTS.duration}ms`);
-    
+
     const style = svgRoot.createElementNS("http://www.w3.org/2000/svg", "style");
     const node = svgRoot.createTextNode(styleSheetText);
 

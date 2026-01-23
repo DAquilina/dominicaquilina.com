@@ -1,5 +1,5 @@
 :root {
-  --colour-backdrop:        rgba(0, 0, 0, 0.5);
+  --colour-backdrop:        rgba(0, 0, 0, 0.75);
   --colour-bg:              #F9FAFB;
   --colour-bg-dark:         #040404;
   --colour-text:            #0B1215;
@@ -46,11 +46,12 @@
   --constrain-md: 800px;
   --constrain-lg: 1200px;
 
-  --z-index-base:      1;
-  --z-index-behind:   -1;
-  --z-index-nudge:     2;
-  --z-index-above:     10;
-  --z-index-priority:  9001;
+  --z-index-base:         1;
+  --z-index-behind:      -1;
+  --z-index-nudge:        2;
+  --z-index-overlay:      9;
+  --z-index-overlay-item: 9;
+  --z-index-priority:     9001;
 
   --transition-function-default: ease;
   /* Borrowed from https://easingwizard.com/ */

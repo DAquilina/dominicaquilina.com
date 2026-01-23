@@ -6,7 +6,7 @@
   display: block;
   padding: calc(var(--outline-buffer) + 2px);
   text-align: center;
-  z-index: var(--z-index-above);
+  z-index: var(--z-index-overlay);
 
   &.dark {
     & > ul {
@@ -159,14 +159,14 @@
 
     & > label {
       position: relative;
-      z-index: var(--z-index-above);
+      z-index: var(--z-index-overlay);
     }
 
     & > li {
       position: relative;
 
       width: 150px;
-      z-index: var(--z-index-above);
+      z-index: var(--z-index-overlay);
 
       @media only screen and (max-width: 600px) {
         display: block;

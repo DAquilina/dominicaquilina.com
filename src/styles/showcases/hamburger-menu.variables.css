@@ -1,0 +1,13 @@
+:root {
+  --nav-icon-animation-duration: 400ms;
+  --nav-icon-animation-offset: 10px;
+  --nav-icon-colour-active: #000000;
+  --nav-icon-opacity-animation-duration: 200ms;
+  --nav-trigger-height: 56px;
+  --nav-trigger-width: 100px;
+  --nav-icon-height: 50px;
+  --nav-icon-width: 50px;
+
+  --nav-trigger-resolved-height: calc(2 * var(--nav-icon-animation-offset) + var(--nav-icon-height));
+  --nav-overlay-radius: calc(2 * var(--nav-trigger-width));
+}

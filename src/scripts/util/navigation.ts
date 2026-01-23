@@ -18,7 +18,7 @@ export namespace Navigation {
     Dom.injectHTML(ElementIds.Navigation, navigationMarkup);
 
     // Select all navigable nav links and attach the navigate event to them
-    const nodes = document.querySelectorAll(`${ElementIds.Navigation} a`);
+    const nodes = document.querySelectorAll(`#${ElementIds.Navigation} a`);
 
     nodes.forEach((node: Element) => {
 
@@ -38,9 +38,6 @@ export namespace Navigation {
 
   export function getPage(pathname: string): Page {
     let resolvedPath = pathname === "/" ? "home" : pathname;
-
-    // DEBUG
-    console.log(pathname);
 
     if (resolvedPath[0] === "/") {
       resolvedPath = resolvedPath.slice(1);

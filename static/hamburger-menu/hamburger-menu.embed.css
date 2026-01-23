@@ -1,0 +1,38 @@
+* {
+  cursor: pointer;
+
+  transition: all [burgerTranslationDuration] ease;
+}
+
+[hamburgerWrapper] {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+[hamburgerWrapper] [bottomBun] {
+  transform: translateY(0);
+}
+
+[hamburgerWrapper].open [bottomBun] {
+  transform: translateY([burgerTranslationSize]);
+}
+
+[hamburgerWrapper] [closeButton] {
+  transform: scale(0.0);
+  transform-origin: 62px 44px;
+}
+
+[hamburgerWrapper].open [closeButton] {
+  transform: scale(1.0);
+}
+
+[hamburgerWrapper] [patty] {
+  transform: translateY(0);
+}
+
+[hamburgerWrapper] [topBun] {
+  transform: translateY(0);
+}
+
+[hamburgerWrapper].open [topBun] {
+  transform: translateY(calc(-1 * [burgerTranslationSize]));
+}

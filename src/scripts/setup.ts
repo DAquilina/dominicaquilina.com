@@ -1,11 +1,12 @@
 import sitemap from "../assets/sitemap.json" with { type: "json" };
-import { EMPLOYMENT_HISTORY } from "./constants/employment-history";
 
+import { EMPLOYMENT_HISTORY } from "./constants/employment-history";
 import { LAST_UPDATED } from "./constants/last-updated";
 import { SOCIAL_MEDIA_ICONS } from "./constants/social-media-icons";
 
 import { ElementIds } from "./enums/element-ids";
 import { Skills } from "./enums/skills";
+import { HamburgerMenu } from "./showcase/hamburger-menu";
 import { EmploymentHistoryItem } from "./types/employment-history-item";
 
 import { SocialMediaIcon } from "./types/social-media-icon";
@@ -21,16 +22,15 @@ export namespace Setup {
     Navigation.loadSitemap(sitemap);
 
     try {
-      Navigation.navigate(Navigation.getPage(window.location.pathname));
+      if (!window.location.pathname.match(/assets\//i)) {
+        Navigation.navigate(Navigation.getPage(window.location.pathname));
+      }
     }
     catch (error) {
-      // DEBUG
-      console.log(Navigation.getPage("404"));
-
       Navigation.navigate(Navigation.getPage("404"));
     }
 
-    window.onload = () => {
+    document.onload = () => {
 
       Navigation.bootstrapNav();
     };
@@ -97,6 +97,12 @@ export namespace Setup {
     );
 
     Dom.injectHTML(ElementIds.ExperienceItems, markup);
+  }
+
+
+  export function bootstrapHamburgerMenu(): void {
+
+    void HamburgerMenu.setup();
   }
 
 
