@@ -2,7 +2,12 @@
 @import "./hamburger-menu.variables.css";
 
 
-[data-route=hamburger-menu] {
+[data-route=hamburger] {
+  /* ********** GENERAL ************ */
+  object {
+    overflow: visible !important;
+  }
+
   /* ********** INGREDIENTS ************ */
 
   .ingredient-icon {
