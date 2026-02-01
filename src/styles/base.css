@@ -17,6 +17,18 @@ aside {
   font-style: italic;
 }
 
+em {
+  &.skill-chip {
+    background-color: var(--colour-accent);
+    border-radius: 1em;
+    color: var(--colour-text-light);
+    corner-shape: squircle;
+    display: inline-block;
+    font-style: normal;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
 h1,
 h2,
 h3 {

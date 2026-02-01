@@ -49,6 +49,10 @@
         color: var(--colour-text-light);
         padding: var(--spacing);
       }
+
+      & > .skills-wrapper {
+        padding: var(--spacing-sm);
+      }
     }
   }
 }

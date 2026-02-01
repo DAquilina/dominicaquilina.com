@@ -152,6 +152,16 @@
           outline: none;
         }
 
+        &:not([data-navigate]):not(:last-child)::after {
+          position: absolute;
+          right: 3px;
+          top: calc(var(--nav-icon-height) / 2 + var(--spacing-sm));
+
+          content: "+";
+
+          transform: translateY(-50%);
+        }
+
         & > span {
           display: block;
           overflow: hidden;

@@ -80,7 +80,7 @@ export namespace HamburgerMenu {
       outputHtml += `
 <a href="#" id="${item.id}"
     ${!item.children?.length ? "data-navigate" : ""}
-    title="${item.title}"
+    title="${item.label}: ${item.title}"
     class="${HAMBURGER_ELEMENT_IDS.navigationChildLink}"
 >
   <span class="ingredient-icon ${lastIngredient}"></span>
