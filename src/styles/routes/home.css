@@ -1,5 +1,64 @@
 @import "../variables.css";
+@import "../showcases/home.variables.css";
 
 [data-route=home] {
-  
+  #home-container {
+    background: var(--colour-backdrop);
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-lg);
+    pointer-events: none;
+
+    #name-of-cool-guy-who-you-should-hire {
+      pointer-events: all;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  #hex-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+
+    align-content: flex-start;
+    align-items: flex-start;
+    container-type: inline-size;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--hex-margin);
+    padding-bottom: calc(var(--hex-size)/(4*cos(30deg)));
+    /* z-index: var(--z-index-behind); */
+
+    transform: translateY(-50%);
+
+    .hex {
+      position: relative;
+
+      aspect-ratio: cos(30deg);
+      background-color: var(--C4);
+      border-radius: 50% / 25%;
+      corner-shape: bevel;
+      display: block;
+      opacity: 0.0;
+      width: var(--hex-size);
+
+      /* https://css-tricks.com/responsive-hexagon-grid-using-modern-css/ */
+      margin-bottom: calc(var(--hex-size)/(-4 * cos(30deg)));
+      --_n: round(down,(100cqw + var(--hex-margin))/(var(--hex-size) + var(--hex-margin)));
+      --_m: round(down,(100cqw - (var(--hex-size) - var(--hex-margin))/2)/(var(--hex-size) + var(--hex-margin)));
+      --_c: round(down,1 - mod((sibling-index() - 1 + var(--_m))/(var(--_n) + var(--_m)),1));
+      margin-left: calc(var(--_c)*(var(--hex-size) + var(--hex-margin))/2);
+
+      transition: background-color 2s var(--transition-function-default);
+
+      &:hover {
+        background-color: var(--colour-accent-alt);
+        transition: background-color 0.05s var(--transition-function-default);
+      }
+    }
+  }
 }

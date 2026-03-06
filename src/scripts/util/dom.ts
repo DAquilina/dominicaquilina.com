@@ -1,3 +1,5 @@
+import { Dimensions } from "../types/dimensions";
+
 export namespace Dom {
   export function addEventToElement(eventName: string, elementId: string, callback: (event: Event) => void) {
 
@@ -12,6 +14,24 @@ export namespace Dom {
   export function clearHTML(containerId: string) {
 
     injectHTML(containerId, "");
+  }
+
+
+  export function getElementDimensions(containerId: string): Dimensions {
+
+    const container = document.getElementById(containerId);
+
+    if (container) {
+      return {
+        height: container.offsetHeight,
+        width: container.offsetWidth
+      };
+    }
+
+    return {
+      height: 0,
+      width: 0
+    };
   }
 
 

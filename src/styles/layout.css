@@ -28,6 +28,16 @@ footer {
   position: fixed;
   right: var(--spacing);
   bottom: var(--spacing);
+
+  background-color: var(--colour-backdrop);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  z-index: var(--z-index-overlay);
+
+  #media {
+    display: flex;
+    gap: var(--spacing);
+  }
 }
 
 /* ***** Containers ***** */
@@ -36,10 +46,13 @@ footer {
   left: 50%;
   top: 50%;
 
+  border-radius: var(--border-radius);
+  display: inline-block;
+  margin: 0 auto;
   max-height: 100%;
   overflow: visible;
   text-align: center;
-  width: 100%;
+  width: auto;
 
   transform: translate(-50%, -50%);
 

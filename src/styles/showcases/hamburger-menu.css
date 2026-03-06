@@ -128,7 +128,7 @@
         top: 50%;
 
         border-radius: var(--border-radius);
-        color: var(--colour-text-light);
+        color: var(--colour-text-alt);
         display: inline-block;
         height: calc(2 * var(--spacing-sm) + 70px);
         opacity: 0.0;

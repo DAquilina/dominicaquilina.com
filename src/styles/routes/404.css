@@ -18,7 +18,7 @@
   animation: hearth-glow var(--transition-timing-long) infinite alternate forwards var(--transition-function-flicker);
 
   .showcase-container {
-    color: var(--colour-text-light);
+    color: var(--colour-text-alt);
 
     #hearth {
       position: relative;

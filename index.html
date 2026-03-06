@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 
     <!-- In-house styles -->
-    <!-- Optimization Reference: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS -->
     <link rel="stylesheet" href="src/styles/_index.css" />
 
+    <!-- Resources -->
+    <!-- CSS Reference: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS -->
+    <!-- HTML Semantic Elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements-->
 
     <!--
       TODO:
-      - General styling
       - Fancy animations
       - Accessibility audit
       - SEO audit
@@ -39,13 +40,9 @@
 
     <div id="content" class="content-container"></div>
 
-    <footer>
-      <div id="media"></div>
+    <footer><div id="media"></div></footer>
 
-      <span id="lastUpdated"></span>
-    </footer>
-
-    <a href="#header" class="sr-only focusable">Return to top</a>
+    <a href="#content" class="sr-only focusable">Return to top</a>
 
     <!-- In-house scripts -->
     <script type="module" src="src/scripts/init.ts"></script>

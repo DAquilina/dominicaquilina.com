@@ -7,12 +7,13 @@ import { SOCIAL_MEDIA_ICONS } from "./constants/social-media-icons";
 import { ElementIds } from "./enums/element-ids";
 import { Skills } from "./enums/skills";
 import { HamburgerMenu } from "./showcase/hamburger-menu";
+import { Home } from "./showcase/home";
 import { EmploymentHistoryItem } from "./types/employment-history-item";
 
 import { SocialMediaIcon } from "./types/social-media-icon";
 
 import { Dom } from "./util/dom";
-import { getAbsolutePath, getMonthString } from "./util/helpers";
+import { clearDebounce, debounce, getAbsolutePath, getMonthString } from "./util/helpers";
 import { Navigation } from "./util/navigation";
 
 
@@ -34,6 +35,10 @@ export namespace Setup {
 
       Navigation.bootstrapNav();
     };
+
+    window.addEventListener("unload", () => {
+      clearDebounce();
+    });
   }
 
 
@@ -43,7 +48,7 @@ export namespace Setup {
 
     Navigation.loadPartials(
       [
-        getAbsolutePath(`../html/shared/social-media-icon.partial.html`, window.location)
+        getAbsolutePath(`/src/html/shared/social-media-icon.partial.html`, window.location)
       ]
     ).then(async ([socialMediaIconTemplate]) => {
 
@@ -107,6 +112,14 @@ export namespace Setup {
 
 
   export function bootstrapHome(): void {
+
+    setTimeout(() => {
+      Home.generateHexMarkup();
+    }, 300);
+
+    window.addEventListener("resize", () => {
+      debounce(Home.generateHexMarkup);
+    });
 
     Dom.injectHTML(ElementIds.LastUpdatedContentContainer, `Last Updated: ${LAST_UPDATED}`);
   }

@@ -10,7 +10,7 @@
 
   &.dark {
     & > ul {
-      background-color: var(--colour-bg-dark);
+      background-color: var(--colour-bg-alt);
     }
   }
 
@@ -33,6 +33,7 @@
     border-radius: var(--border-radius);
     display: none;
     height: 25px;
+    pointer-events: all;
     width: 25px;
 
     @media only screen and (max-width: 600px) {
@@ -53,10 +54,14 @@
         display: block;
       }
 
+      a {
+        pointer-events: all;
+      }
+
       a,
       span {
         background-color: var(--colour-accent);
-        color: var(--colour-text-light);
+        color: var(--colour-text);
         display: inline-block;
         width: 100%;
 
@@ -102,6 +107,7 @@
       }
 
       li {
+        position: relative;
         font-size: var(--font-size-sm);
 
         a {
@@ -111,9 +117,16 @@
             background-color: var(--colour-accent-alt);
           }
         }
+
+        span {
+          /* This is to address an edge case where the last item in the nested list doesn't keep the submenu open */
+          pointer-events: all;
+        }
       }
 
       li:focus-within {
+        z-index: var(--z-index-overlay-item);
+
         a,
         span {
           background-color: var(--colour-accent-alt);
@@ -218,7 +231,7 @@
 
     #nav-trigger:active ~ ul > li > label,
     #nav-trigger:focus ~ ul > li > label {
-      outline: 1px dashed var(--colour-accent);
+      outline: 1px dashed var(--C4);
       outline-offset: var(--outline-buffer);
     }
   }
@@ -238,6 +251,6 @@
 [data-route=shavening] [data-target=shavening],
 [data-route=sorting-hat] [data-target=sorting-hat] {
   background-color: var(--colour-accent-disabled) !important;
-  color: var(--colour-text) !important;
+  color: var(--colour-text-alt) !important;
   cursor: default;
 }

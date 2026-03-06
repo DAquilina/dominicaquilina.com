@@ -1,0 +1,6 @@
+:root {
+  /* Linked to HEX_SIZE */
+  --hex-size: 40px;
+  /* Linked to HEX_MARGIN */
+  --hex-margin: 5px;
+}

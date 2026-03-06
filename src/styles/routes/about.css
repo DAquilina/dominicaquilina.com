@@ -1,7 +1,25 @@
 @import "../variables.css";
 
 [data-route=about] {
+  h3 {
+    margin: var(--spacing-xl) auto var(--spacing-lg);
+  }
   nav {
     margin-bottom: var(--spacing-lg);
+  }
+
+  p,
+  .constrain ul {
+    background-color: var(--colour-backdrop);
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-lg);
+  }
+
+  ul {
+    padding-left: var(--spacing-xl);
+
+    li {
+      margin-bottom: var(--spacing);
+    }
   }
 }

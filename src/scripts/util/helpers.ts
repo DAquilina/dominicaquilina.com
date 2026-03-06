@@ -1,4 +1,23 @@
+import { DEBOUNCE_TIMEOUT } from "../constants/debounce-time";
 import { MONTHS } from "../constants/months";
+
+let _debounceTimer: ReturnType<typeof setTimeout>;
+
+export function clearDebounce(): void {
+  if (_debounceTimer) {
+    clearTimeout(_debounceTimer);
+  }
+}
+
+/**
+ * Rate-limits the given callback
+ */
+export function debounce(callback: Function, threshold?: number): void {
+
+  clearDebounce();
+
+  _debounceTimer = setTimeout(callback, threshold || DEBOUNCE_TIMEOUT);
+}
 
 /**
  * An async and waitable time delay
@@ -29,6 +48,6 @@ export function getMonthString(date: Date | "Present"): string {
   if (date === "Present") {
     return date;
   }
-  
+
   return `${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
 }

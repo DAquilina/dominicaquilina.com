@@ -17,18 +17,6 @@ aside {
   font-style: italic;
 }
 
-em {
-  &.skill-chip {
-    background-color: var(--colour-accent);
-    border-radius: 1em;
-    color: var(--colour-text-light);
-    corner-shape: squircle;
-    display: inline-block;
-    font-style: normal;
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
-}
-
 h1,
 h2,
 h3 {
@@ -71,19 +59,14 @@ hr {
   width: min(90%, var(--constrain-sm));
 }
 
-p {
-  margin: var(--spacing) auto;
-  max-width: var(--constrain-md);
-
-  @media only screen and (max-width: 600px) {
-    margin: var(--spacing);
-  }
+strong {
+  color: var(--C4);
 }
 
 .chip {
   background-color: var(--colour-accent);
   border-radius: var(--border-radius);
-  color: var(--colour-text-light);
+  color: var(--colour-text);
   display: inline-block;
   font-size: var(--font-size-sm);
   margin-bottom: var(--spacing-sm);
@@ -104,7 +87,7 @@ p {
 *:focus,
 [type=checkbox]:active ~ label,
 [type=checkbox]:focus ~ label {
-  outline: 1px dashed var(--colour-accent);
+  outline: 1px dashed var(--C4);
   outline-offset: var(--outline-buffer);
 }
 
@@ -118,7 +101,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: var(--colour-accent);
+    color: var(--C4);
     text-decoration: underline solid;
   }
 }
@@ -143,6 +126,20 @@ button,
   a,
   button {
     pointer-events: none;
+  }
+}
+
+/* ***** Helpers ***** */
+.center {
+  text-align: center;
+}
+
+.constrain {
+  margin: var(--spacing) auto;
+  max-width: var(--constrain-md);
+
+  @media only screen and (max-width: 600px) {
+    margin: var(--spacing);
   }
 }
 

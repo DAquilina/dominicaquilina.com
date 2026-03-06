@@ -1,0 +1,20 @@
+/* https://colorhunt.co/palette/1b262c0f4c753282b8bbe1fa */
+/* Using this as a dark theme */
+:root {
+  --C1: #1B262C;
+  --C2: #0F4C75;
+  --C3: #3282B8;
+  --C4: #BBE1FA;
+
+  --theme-colour-bg:            var(--C1);
+  --theme-colour-bg-alt:        #F0F0F0;
+  --theme-colour-backdrop:      rgba(0, 0, 0, 0.75);
+  --theme-colour-backdrop-alt:  rgba(0, 0, 0, 0.5);
+
+  --theme-colour-accent:        var(--C2);
+  --theme-colour-accent-alt:    var(--C3);
+
+  --theme-colour-text:          #F0F0F0;
+  --theme-colour-text-alt:      var(--C1);
+  --theme-colour-text-disabled: rgba(245, 245, 245, 0.5); 
+}
