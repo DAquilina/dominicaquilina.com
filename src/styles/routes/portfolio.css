@@ -8,11 +8,6 @@
     .portfolio-item {
       position: relative;
 
-      background-color: var(--colour-backdrop-alt);
-      border-radius: var(--border-radius);
-      box-shadow: var(--box-shadow);
-      margin-bottom: var(--spacing-lg);
-
       &:last-child {
         margin-bottom: 0;
       }

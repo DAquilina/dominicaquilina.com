@@ -239,16 +239,12 @@
 
 /* TODO: Figure out a way to do this more dynamically */
 [data-route=about] [data-target=about],
-[data-route=adventure] [data-target=adventure],
-[data-route=cv-movie] [data-target=cv-movie],
-[data-route=experience] [data-target=portfolio],
+[data-route=gallery] [data-target=gallery],
 [data-route=hamburger] [data-target=hamburger],
 [data-route=home] [data-target=home],
-[data-route=mindgame] [data-target=mindgame],
 [data-route=mmson] [data-target=mmson],
 [data-route=portfolio] [data-target=portfolio],
 [data-route=resume] [data-target=resume],
-[data-route=shavening] [data-target=shavening],
 [data-route=sorting-hat] [data-target=sorting-hat] {
   background-color: var(--colour-accent-disabled) !important;
   color: var(--colour-text-alt) !important;

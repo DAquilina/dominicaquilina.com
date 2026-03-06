@@ -18,78 +18,160 @@
       "children": [
         {
           "canNavigate": true,
+          "description": "A catch-all project for practicing software engineering concepts. This includes solutions to Leetcode problems and technical assessments, self-contained learning exercises, and a bank of robust regular expressions.",
+          "external": true,
+          "label": "Algorithm Practice",
+          "path": "https://github.com/DAquilina/algorithm-practice",
+          "skills": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "Algorithm Design and Analysis",
+            "Regular Expressions"
+          ],
+          "title": "Shoring up my computer engineering skillset through rigorous training",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "description": "This project was designed specifically to be a portfolio piece showcasing how a game-like experience can be created without a canvas. The goal is to continue to expand it over time with new features and more insight into my diverse skillset.",
           "external": true,
           "label": "Resumé Adventure",
           "path": "https://adventure.dominicaquilina.com",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "JQuery"
+          ],
           "title": "Get inside the mind (and credentials!) of Dominic Aquilina",
           "children": []
         },
         {
           "canNavigate": true,
-          "external": true,
-          "label": "CV: The Movie",
-          "path": "https://cv-movie.dominicaquilina.com",
-          "title": "Why read my CV when you can *experience* it?",
-          "children": []
-        },
-        {
-          "canNavigate": true,
+          "description": "Given only the prompt of \"build something interesting in angular\" as part of a multi-step, story-driven application process, I came up with what I have lovingly dubbed \"the shavening.\" It's a simple Angular animation powered by CSS and a basic RxJS interval which was built in about 50 minutes. All artwork is original.",
           "external": true,
           "label": "The Shavening",
           "path": "https://shavening.dominicaquilina.com",
+          "skills": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "Angular"
+          ],
           "title": "A portrait of a man... sort of",
           "children": []
         },
         {
           "canNavigate": true,
+          "description": "My second attempt at a solution to the challenge of \"build something interesting in Angular.\" I wanted a way to highlight some of my CV's points of interest while paying homage to my love of video games. This could very easily be expanded into a cutscene engine for an angular-based browser game.",
           "external": true,
-          "label": "Blog (Creative Writing)",
-          "path": "https://idlemindunhinged.blogspot.com/",
-          "title": "Creativity comes in many forms",
+          "label": "CV: The Movie",
+          "path": "https://cv-movie.dominicaquilina.com",
+          "skills": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "Angular"
+          ],
+          "title": "Why read my CV when you can *experience* it?",
           "children": []
         },
         {
           "canNavigate": true,
+          "description": "The MMSON website builder, or \"MoonMoon's JSON-based Website Builder,\" is a tool which can dynamically render React apps based on simple JSON configuration files, providing a host of pre-built components.",
           "label": "MMSON: MoonMoon's JSON-based Website Builder",
           "path": "portfolio/mmson",
+          "skills": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "React"
+          ],
           "title": "I'm So Meta Even This Acronym",
           "children": []
         },
         {
           "canNavigate": true,
+          "description": "A digital shadow play created as part of an anniversary gift for my wife. This was an exploration of both the power of CSS animation and the art of visual storytelling.",
           "external": true,
           "label": "Shadows",
           "path": "https://shadows.dominicaquilina.com",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
           "title": "Thoughtful AND Creative!",
           "children": []
         },
         {
           "bootstrapFunction": "bootstrapHamburgerMenu",
           "canNavigate": true,
+          "description": "Never one to pass on a good pun, this is a fun, literal interpretation of the classic menu icon that doubles as a bit of a tech demo for a rotary navigation pattern.",
           "label": "Hamburger Menu",
           "path": "portfolio/hamburger",
+          "skills": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "SVG"
+          ],
           "title": "Sinking my teeth into a really terrible pun",
-          "children": [],
-          "scripts": []
+          "children": []
         },
         {
           "canNavigate": true,
+          "description": "A CLI app developed in Python for a self-contained system driven by a Raspberry Pi; involved custom wiring and sewing a servo-controlled custom machined jaw into a hat enclosure and writing a Python service to ingest sound bytes and synchronise the jaw's movement as they played.",
           "label": "Animatronic Sorting Hat",
           "path": "portfolio/sorting-hat",
+          "skills": [
+            "Raspberry Pi",
+            "Python",
+            "NumPy",
+            "Mechanical Engineering",
+            "Sewing"
+          ],
           "title": "All bark, but a little bite too",
           "children": []
         },
         {
           "canNavigate": true,
+          "description": "What began as a personal challenge to flex my creative writing capabilities expanded into a more formal exercise due to popular demand. This blog was a mechanism for keeping myself accountable and to collect the relevant writing in one convenient place.",
+          "external": true,
+          "label": "Blog (Creative Writing)",
+          "path": "https://idlemindunhinged.blogspot.com/",
+          "skills": [
+            "Creative Writing"
+          ],
+          "title": "Creativity comes in many forms",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "description": "",
           "label": "Graphic Design Gallery",
           "path": "portfolio/gallery",
+          "skills": [
+            "Figma",
+            "Photoshop",
+            "Adobe XD",
+            "SVG",
+            "Wireframing"
+          ],
           "title": "Graphic design fun and function",
           "children": []
         },
         {
           "canNavigate": false,
+          "description": "Developed in collaboration with Brittany Devoe and Christine Garinger with art by Sylvia Pozeg, MindGame is a trivia bingo game intended to reduce the stigma associated with mental illness.",
           "label": "MindGame",
           "path": "portfolio/mindgame",
+          "note": "As Flash is now an unsupported technology, you'll need an emulator of some kind to run the swf.",
+          "skills": [
+            "Flash",
+            "XML"
+          ],
           "title": "Helping reduce the stigma of mental health",
           "children": []
         }
