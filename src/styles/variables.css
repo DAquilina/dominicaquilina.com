@@ -23,10 +23,12 @@
 
   --outline-buffer: 3px;
 
+  --line-height: 1.2;
+
   /* Need to implement accessible font scaling */
   --font-size-xs:  8px;
-  --font-size-sm:  10px;
-  --font-size-md:  14px;
+  --font-size-sm:  12px;
+  --font-size-md:  16px;
   --font-size-lg:  24px;
   --font-size-xl:  42px;
   --font-size-xxl: 60px;

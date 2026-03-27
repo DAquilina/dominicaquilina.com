@@ -30,8 +30,14 @@
     <!--
       TODO:
       - Fancy animations
+      '-> Mouse-following sprite on portfolio
+      '-> Skill containers in about
       - Accessibility audit
       - SEO audit
+      '-> Page previews
+      '-> External link management
+      '-> Keywords and meta
+      '-> Robots.txt (is this still relevant?)
     -->
   </head>
   <body id="body">
@@ -40,7 +46,8 @@
 
     <div id="content" class="content-container"></div>
 
-    <footer><div id="media"></div></footer>
+    <!-- Since this is floating, we want it to be accessible via keyboard prior to the content -->
+    <footer id="media"></footer>
 
     <a href="#content" class="sr-only focusable">Return to top</a>
 

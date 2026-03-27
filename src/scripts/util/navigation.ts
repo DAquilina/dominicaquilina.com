@@ -5,6 +5,7 @@ import { ElementIds } from "../enums/element-ids";
 
 import { Page } from "../types/page";
 import { Setup } from "../setup";
+import { LinkType } from "../enums/link-type";
 
 
 export namespace Navigation {
@@ -18,7 +19,7 @@ export namespace Navigation {
     Dom.injectHTML(ElementIds.Navigation, navigationMarkup);
 
     // Select all navigable nav links and attach the navigate event to them
-    const nodes = document.querySelectorAll(`#${ElementIds.Navigation} a`);
+    const nodes = document.querySelectorAll(`#${ElementIds.Navigation} a:not([download])`);
 
     nodes.forEach((node: Element) => {
 
@@ -27,7 +28,11 @@ export namespace Navigation {
         event.preventDefault();
 
         try {
-          navigate(getPage((event.target! as HTMLElement).getAttribute("data-target")!));
+          const page = getPage((event.target! as HTMLElement).getAttribute("data-target")!);
+
+          if (page?.type !== LinkType.Download) {
+            navigate(page);
+          }
         }
         catch (error) {
           navigate(getPage("404"));
@@ -56,14 +61,14 @@ export namespace Navigation {
 
   export function getPageId(page: Page): string | undefined {
 
-    return ((page.canNavigate && !page.external) ? page.path!.split("/").pop() : page.label.toLowerCase());
+    return ((page.canNavigate && page.type === LinkType.Internal) ? page.path!.split("/").pop() : page.label.toLowerCase());
   }
 
   export function loadPage(page: Page){
 
     Dom.toggleAttributeOnElement("body", "data-loading");
 
-    if (page.external) {
+    if (page.type === LinkType.External) {
       window.open(page.path, "_blank");
     }
     else {
@@ -128,8 +133,10 @@ export namespace Navigation {
 
     loadPage(targetPage);
 
-    _updateUrl(targetPage);
-    _updateTitle(targetPage);
+    if (targetPage.type === LinkType.Internal) {
+      _updateUrl(targetPage);
+      _updateTitle(targetPage);
+    }
   }
 
 
@@ -168,10 +175,13 @@ export namespace Navigation {
           tagName = "span";
         }
         else {
-          tagName = `a role="button" href="${page.external ? "" : "/"}${page.path}" data-target="${getPageId(page)}"`;
+          tagName = `a role="button" href="${page.type !== LinkType.External ? "/" : ""}${page.path}" data-target="${getPageId(page)}"`;
         }
 
-        if (page.canNavigate && page.external) {
+        if (page.type === LinkType.Download) {
+          tagName += ` download`;
+        }
+        else if (page.canNavigate && page.type === LinkType.External) {
           tagName += ` target="_blank"`;
         }
 

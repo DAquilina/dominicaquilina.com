@@ -59,6 +59,10 @@ hr {
   width: min(90%, var(--constrain-sm));
 }
 
+p {
+  line-height: var(--line-height);
+}
+
 strong {
   color: var(--C4);
 }

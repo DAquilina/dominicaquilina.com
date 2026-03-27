@@ -9,5 +9,6 @@ export enum ElementIds {
   NavigationCloseButton = "nav-button-close",
   NavigationTrigger = "nav-trigger",
   NavigationTriggerLabel = "nav-trigger-label",
+  PortfolioItems = "portfolio-items",
   SocialMediaContentContainer = "media"
 }

@@ -123,4 +123,9 @@ export namespace Setup {
 
     Dom.injectHTML(ElementIds.LastUpdatedContentContainer, `Last Updated: ${LAST_UPDATED}`);
   }
+
+
+  export function bootstrapPortfolio(): void {
+    
+  }
 }

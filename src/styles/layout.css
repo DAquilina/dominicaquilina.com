@@ -31,13 +31,10 @@ footer {
 
   background-color: var(--colour-backdrop);
   border-radius: var(--border-radius);
+  display: flex;
+  gap: var(--spacing);
   padding: var(--spacing-sm);
   z-index: var(--z-index-overlay);
-
-  #media {
-    display: flex;
-    gap: var(--spacing);
-  }
 }
 
 /* ***** Containers ***** */

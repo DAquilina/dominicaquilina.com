@@ -1,7 +1,7 @@
 @import "../variables.css";
 
 [data-route="portfolio"] {
-  .portfolio-items {
+  #portfolio-items {
     margin: var(--spacing-lg) auto;
     max-width: var(--constrain-md);
 

@@ -1,7 +1,61 @@
 {
-  "canNavigate": true,
-  "label": "Experience",
-  "path": "experience",
-  "title": "Where the magic happened",
-  "children": []
+  "path": "root",
+  "children": [
+    {
+      "canNavigate": true,
+      "label": "Experience",
+      "path": "experience",
+      "title": "Where the magic happened",
+      "children": []
+    },
+    {
+      "canNavigate": false,
+      "label": "Resumé",
+      "path": "resume",
+      "children": [
+        {
+          "canNavigate": true,
+          "description": "The MMSON website builder, or \"MoonMoon's JSON-based Website Builder,\" is a tool which can dynamically render React apps based on simple JSON configuration files, providing a host of pre-built components.",
+          "excludeFromNav": true,
+          "label": "MMSON: MoonMoon's JSON-based Website Builder",
+          "path": "portfolio/mmson",
+          "skills": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "React"
+          ],
+          "title": "I'm So Meta Even This Acronym",
+          "children": []
+        },
+        {
+          "canNavigate": true,
+          "description": "What began as a personal challenge to flex my creative writing capabilities expanded into a more formal exercise due to popular demand. This blog was a mechanism for keeping myself accountable and to collect the relevant writing in one convenient place.",
+          "excludeFromNav": true,
+          "external": true,
+          "label": "Blog (Creative Writing)",
+          "path": "https://idlemindunhinged.blogspot.com/",
+          "skills": [
+            "Creative Writing"
+          ],
+          "title": "Creativity comes in many forms",
+          "children": []
+        },
+        {
+          "canNavigate": false,
+          "description": "Developed in collaboration with Brittany Devoe and Christine Garinger with art by Sylvia Pozeg, MindGame is a trivia bingo game intended to reduce the stigma associated with mental illness.",
+          "label": "MindGame",
+          "path": "portfolio/mindgame",
+          "note": "As Flash is now an unsupported technology, you'll need an emulator of some kind to run the swf.",
+          "skills": [
+            "Flash",
+            "XML"
+          ],
+          "title": "Helping reduce the stigma of mental health",
+          "children": []
+        }
+      ]
+    }
+  ]
 }
+
