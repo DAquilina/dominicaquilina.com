@@ -37,12 +37,13 @@
   --font-size-mobile-md: 12px;
   --font-size-mobile-lg: 18px;
 
-  --border-radius: 5px;
+  --border-radius:    5px;
+  --border-radius-lg: 2em;
 
   --constrain-xs: 320px;
   --constrain-sm: 600px;
   --constrain-md: 800px;
-  --constrain-lg: 1200px;
+  --constrain-lg: 1024px;
 
   --z-index-base:         1;
   --z-index-behind:      -1;
@@ -58,7 +59,7 @@
                 rgba(0, 0, 0, 0.17) 0px 12px 13px,
                 rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-  --transition-timing-default: 0.3s;
+  --transition-timing-default: 0.2s;
   --transition-timing-long: 1.4s;
 
   --transition-function-default: ease;

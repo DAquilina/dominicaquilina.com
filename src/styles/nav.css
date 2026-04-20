@@ -8,12 +8,6 @@
   text-align: center;
   z-index: var(--z-index-overlay);
 
-  &.dark {
-    & > ul {
-      background-color: var(--colour-bg-alt);
-    }
-  }
-
   &.expand-up {
     & > ul {
       bottom: 0;
@@ -244,7 +238,6 @@
 [data-route=home] [data-target=home],
 [data-route=mmson] [data-target=mmson],
 [data-route=portfolio] [data-target=portfolio],
-[data-route=resume] [data-target=resume],
 [data-route=sorting-hat] [data-target=sorting-hat] {
   background-color: var(--colour-accent-disabled) !important;
   color: var(--colour-text-alt) !important;

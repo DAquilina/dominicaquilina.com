@@ -74,6 +74,15 @@
           "title": "Sinking my teeth into a really terrible pun",
           "type": "internal",
           "children": []
+        },
+        {
+          "canNavigate": true,
+          "description": "Throughout my career and personal life I have also taken on the role of a graphic or web designer. This is a gallery of some examples that I'm proud of.",
+          "label": "Graphic Design Gallery",
+          "path": "portfolio/gallery",
+          "title": "Shiny!",
+          "type": "internal",
+          "children": []
         }
       ]
     },

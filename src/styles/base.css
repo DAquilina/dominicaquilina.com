@@ -64,7 +64,25 @@ p {
 }
 
 strong {
-  color: var(--C4);
+  font-weight: bolder;
+
+  &::after {
+    content: "}";
+    margin-left: 0.15em;
+  }
+
+  &::before {
+    content: "{";
+    margin-right: 0.15em;
+  }
+
+  &::after,
+  &::before {
+    position: relative;
+    top: -1px;
+
+    color: var(--colour-accent-alt);
+  }
 }
 
 .card {
@@ -77,12 +95,15 @@ strong {
 
 .chip {
   background-color: var(--colour-accent);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow);
   color: var(--colour-text);
+  corner-shape: squircle;
   display: inline-block;
   font-size: var(--font-size-sm);
+  font-style: normal;
   margin-bottom: var(--spacing-sm);
-  margin-right: var(--spacing);
+  margin-right: var(--spacing-xs);
   padding: var(--spacing-sm) var(--spacing);
 
   @media only screen and (max-width: 600px) {
@@ -103,18 +124,38 @@ strong {
   outline-offset: var(--outline-buffer);
 }
 
-a {
+a[role=link] {
+  position: relative;
+
   color: var(--colour-accent-alt);
   cursor: pointer;
-  text-decoration: underline dotted;
+  text-decoration: none;
 
-  transition: color var(--transition), text-decoration var(--transition);
+  transition: color var(--transition);
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    content: "";
+    display: inline-block;
+    border-bottom: 1px solid var(--colour-accent-alt);
+    width: 0%;
+
+    transition: all var(--transition);
+  }
 
   &:active,
   &:focus,
   &:hover {
     color: var(--C4);
-    text-decoration: underline solid;
+
+    &::after {
+      left: 0%;
+
+      width: 100%;
+    }
   }
 }
 
@@ -150,6 +191,16 @@ button,
   margin-left: auto;
   margin-right: auto;
   max-width: var(--constrain-md);
+
+  @media only screen and (max-width: 600px) {
+    margin: var(--spacing);
+  }
+}
+
+.constrain-lg {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--constrain-lg);
 
   @media only screen and (max-width: 600px) {
     margin: var(--spacing);

@@ -3,7 +3,7 @@
 .icon {
   display: inline-block;
   height: 35px;
-  opacity: 1.0;
+  opacity: 0.6;
   width: 35px;
 
   transition: opacity var(--transition);
@@ -11,7 +11,7 @@
   &:active,
   &:focus,
   &:hover {
-    opacity: 0.6;
+    opacity: 1.0;
   }
 
   &.GitHub {

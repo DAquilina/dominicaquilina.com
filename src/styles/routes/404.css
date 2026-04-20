@@ -18,8 +18,6 @@
   animation: hearth-glow var(--transition-timing-long) infinite alternate forwards var(--transition-function-flicker);
 
   .showcase-container {
-    color: var(--colour-text-alt);
-
     #hearth {
       position: relative;
 
@@ -150,11 +148,11 @@
     }
 
     p {
-      background: var(--colour-card);
+      /* background: var(--colour-card);
       border-radius: var(--border-radius);
       color: var(--colour-text);
       font-size: var(--font-size-lg);
-      padding: var(--spacing-sm);
+      padding: var(--spacing-sm); */
 
       @media only screen and (max-width: 600px) {
         font-size: var(--font-size-mobile-lg);

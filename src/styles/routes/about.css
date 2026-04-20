@@ -9,17 +9,30 @@
   }
 
   p,
-  .constrain ul {
+  .constrain > ul {
     background-color: var(--colour-backdrop);
     box-shadow: var(--box-shadow);
     padding: var(--spacing-lg);
+
+    ul {
+      padding: var(--spacing) 0 0 var(--spacing-lg);
+    }
   }
 
   ul {
     padding-left: var(--spacing-xl);
+    margin: 0 auto;
 
     li {
       margin-bottom: var(--spacing);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .skills-wrapper {
+        margin-top: var(--spacing);
+      }
     }
   }
 }

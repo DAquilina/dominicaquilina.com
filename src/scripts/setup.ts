@@ -8,6 +8,7 @@ import { ElementIds } from "./enums/element-ids";
 import { Skills } from "./enums/skills";
 import { HamburgerMenu } from "./showcase/hamburger-menu";
 import { Home } from "./showcase/home";
+import { Portfolio } from "./showcase/portfolio";
 import { EmploymentHistoryItem } from "./types/employment-history-item";
 
 import { SocialMediaIcon } from "./types/social-media-icon";
@@ -74,7 +75,7 @@ export namespace Setup {
       (experienceItem: EmploymentHistoryItem) => {
         markup += `
 <div class="experience-item">
-  <h3><a target="_blank" href="${experienceItem.companyUrl}">${experienceItem.company}</a></h3>
+  <h3><a href="${experienceItem.companyUrl}" role="link" target="_blank">${experienceItem.company}</a></h3>
   <div class="job-title">${experienceItem.jobTitle}</div>
   <div class="experience-period">${getMonthString(experienceItem.dateStart)} - ${getMonthString(experienceItem.dateEnd)}</div>
   <div class="skills">
@@ -126,6 +127,7 @@ export namespace Setup {
 
 
   export function bootstrapPortfolio(): void {
-    
+
+    Portfolio.renderPortfolioItems();
   }
 }

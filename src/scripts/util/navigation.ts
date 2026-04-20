@@ -80,7 +80,7 @@ export namespace Navigation {
           new MutationObserver(
             async (mutationList, observer) => {
 
-              Dom.setAttributeOnElement("content", "data-route", page.id!);
+              Dom.setAttributeOnElement(ElementIds.MainContentContainer, "data-route", page.id!);
 
               while (document.readyState !== "complete") {
                 await delay(10);
@@ -95,7 +95,7 @@ export namespace Navigation {
               observer.disconnect();
             }
           ).observe(
-            document.getElementById("content") as Node,
+            document.getElementById(ElementIds.MainContentContainer) as Node,
             { childList: true }
           );
 

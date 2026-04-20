@@ -57,22 +57,6 @@
 
       & > .skills-wrapper {
         padding: var(--spacing-sm);
-
-        .skill-chip {
-          background-color: var(--colour-accent);
-          border-radius: 1em;
-          color: var(--colour-text);
-          corner-shape: squircle;
-          display: inline-block;
-          font-style: normal;
-          font-weight: thin;
-          margin-right: var(--spacing-xs);
-          padding: var(--spacing-xs) var(--spacing-sm);
-
-          &:last-child {
-            margin-right: 0;
-          }
-        }
       }
     }
   }
