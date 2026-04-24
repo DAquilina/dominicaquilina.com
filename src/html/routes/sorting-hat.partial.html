@@ -1,4 +1,4 @@
-<div class="content-inner-wrapper constrain">
+<div class="content-inner-wrapper">
   <h2 id="header">The Animatronic Sorting Hat</h2>
 
   <h3>Making Magic Real</h3>
@@ -6,12 +6,182 @@
   <nav id="nav"></nav>
 
   <p class="constrain card">
-    A CLI app developed in Python for a self-contained system driven by a Raspberry Pi; involved custom wiring and sewing a servo-controlled custom
-    machined jaw into a hat enclosure and writing a Python service to ingest sound bytes and synchronise the jaw's movement as they played.
+    The goal of this project was to build a working facsimile of the Sorting Hat from the Harry Potter franchise which could be used to announce table
+    assignments to guests at my Harry-Potter inspired wedding. As a computer engineer with a background in both software development and circuit design,
+    I was confident that I could build something which would both grant me the desired flexibility and outperform existing market solutions on my own.
   </p>
 
-  <p class="constrain card">
-    Eventually this page will contain a case study of the process of building and testing the hat, but as of right now it's still under
-    construction. I'm happy to answer any question you may have in the meantime!
+  <h2>Relevant Skills</h2>
+
+  <div class="constrain card">
+    <ul class="constrain">
+      <li>
+        <strong>Raspberry Pi</strong>: The <em>Compute Module 3+</em> had mainstay power and a tiny footprint -- perfect for running and developing
+        the code associated with this project! All code for the project was written natively using Notepad++ on PiOS, and the wiring was connected
+        directly to the signal ports on the board.
+      </li>
+      <li>
+        <strong>Python</strong>: Python was chosen for this project because it was user-friendly to code in and had good native functionality for
+        interfacing with hardware. The final result had three essential software components:
+
+        <ul>
+          <li>
+            <strong>Audio Processing Library</strong>: I recorded custom sound bites for use in the app, and I needed a mechanism for having the jaw "say"
+            those sounds. I came up with an algorithm to convert the amplitude of the sound wave into usable arrays of bits (<strong>1</strong> indicating the
+            jaw should be opening, and <strong>0</strong> indicating that the jaw should be closing). I implemented this algorithm using
+            <a href="https://pypi.org/project/NuMPI/" role="link" target="_blank">NumPy</a> and pre-processed each sound byte to generate the assets
+            which would be fed to the controller.
+          </li>
+          <li>
+            <strong>The Interface</strong>: In a perfect world, the hat would be wearable and would react to the user's speech, but given that I had
+            a lot of other things on my plate at the time, I made the decision to trade a bit of the "wow" factor for a more practical CLI application.
+            The user could enter their name (using a provided keyboard and monitor, which meant that the hat couldn't be worn), and if there wasn't an
+            exact match they would be presented with a few close suggestions from the actual guest list that they could choose from. The hat would then
+            hem and haw (a random number of times, selecting from a random set of "thinking" statements each time) before announcing which of the four
+            tables the user was assigned to.
+          </li>
+          <li>
+            <strong>The Controller</strong>: This is arguably the fanciest part. When an audio file was to be played, the pre-processed data stream
+            associated with it would be retrieved and fed to the hardware using <a href="https://pypi.org/project/RPi.GPIO/" role="link" target="_blank">RPi.GPIO</a>
+            to control the signals fed to physical wires. I set it up so that the jaw's opening angle was constrained to 30 degrees, and logic within the
+            controller prevented any commands which would exceed that limit.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Mechanical Engineering</strong>: This project came with a physical jaw driven by a motor. Rather than try and MacGuyver an existing 
+        solution, I worked with Benjamin Mercer (Mercer Solutions Inc.) to model, measure, and machine 0.5"x2" steel rod into two nested arcs which were
+        then attached together with washers and bolts before being connected to the motor. The motor directly controlled the outer jaw, and the inner
+        jaw was made static and attached to a frame/enclosure we also constructed ourselves. The criteria for selecting the motor were power constraints
+        (i.e. ensuring that it would be able to run off of power supplied by the Raspberry Pi), bi-directional capacity (so that the jaw could open and
+        close to specific thresholds without having to complete a full rotation), and safety. It had to be powerful enough to move despite resistance
+        from the fabric or minor external obstructions, but not so powerful that it would cause damage if it happened to close on a curious finger during
+        the event. The latter concern was explicitly tested before and after assembly -- just in case.
+      </li>
+      <li>
+        <strong>Sewing and Animatronics</strong>: Then it came time to put everything together. The design and construction were all tested in stages,
+        but the end result was the Raspberry Pi running the app being hooked up to an independent power source and the external monitor. The keyboard
+        was wireless, connected via a bluetooth dongle plugged into the Pi's USB port. I then mapped the GPIO ports of the Pi to the motor's driver
+        (TB6612) using a breadboard before securing all of them parts in the enclosure that I set up inside the jaw. To save time, the shell of the
+        hat was purchased online, but I carefully cut the mouth out and manually sewed the jaw in place such that it would move the fabric with it
+        when it spoke. The enclosure was then sewn directly into the hat as well so that the internal components would be contained while it was in
+        operation.
+      </li>
+    </ul>
+  </div>
+
+  <h2>Wiring Specifications</h2>
+
+  <p class="constrain">
+    <img src="/src/assets/sorting-hat/pin-mappings.jpg" alt="a table showing the physical pin mappings between the Raspberry Pi and the TB6612 driver" role="figure" />
+
+    <aside class="text-center">
+      Hey, remember when paper was a thing that people regularly used? I wrote down the mapping of the pins from the Rapsberry Pi to the TB6612 driver
+      so that I could have a reference handy if anything went wrong.
+    </aside>
   </p>
+
+  <h2>Algorithm Design Scratch Work</h2>
+
+  <p class="constrain">
+    <img src="/src/assets/sorting-hat/algorithm-theory.jpg" alt="scratch notes showing thoughts on the audio processing algorithm" role="figure" />
+
+    <aside>
+      On the other side, I did some rough work to figure out a basic algorithm for controlling the jaw. I had to iterate on the original idea, but the
+      basic premise persisted.
+    </aside>
+  </p>
+
+  <h2>Mechanical and Algorithm Tests</h2>
+
+  <div class="constrain">
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-1.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-1.MP4" download>Download the Motor Test 1 video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-2.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-2.MP4" download>Download the Motor Test 2 video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-3.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-3.MP4" download>Download the Motor Test 3 video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-4a.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-4a.MP4" download>Download the Motor Test 4a video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-4b.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-4b.MP4" download>Download the Motor Test 4b video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-5.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-5.MP4" download>Download the Motor Test 5 video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-6.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-6.MP4" download>Download the Motor Test 6 video</a>
+      </p>
+    </video>
+
+    <video controls>
+      <source src="/src/assets/sorting-hat/motor-test-7.MP4" type="video/mp4" />
+      <p class="card">
+        Video playback unsupported.
+
+        <br /> <br />
+
+        <a href="/src/assets/sorting-hat/motor-test-7.MP4" download>Download the Motor Test 7 video</a>
+      </p>
+    </video>
+  </div>
 </div>

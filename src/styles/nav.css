@@ -35,6 +35,7 @@
     }
   }
 
+  /* Styles for lists at any level in the nav */
   ul {
     list-style-type: none;
     margin: 0;
@@ -42,6 +43,7 @@
 
     li {
       display: inline-block;
+      margin: 0;
       width: 100%;
 
       @media only screen and (max-width: 600px) {
@@ -58,77 +60,15 @@
         color: var(--colour-text);
         display: inline-block;
         width: 100%;
-
-        &:active ~ ul,
-        &:focus ~ ul,
-        &:hover ~ ul {
-          /* This is a magic number that is being used until Firefox and Safari support interpolate-size */
-          max-height: 375px;
-
-          /* interpolate-size: allow-keywords; */
-          /* max-height: fit-content; */
-        }
       }
 
       span {
         padding: var(--spacing-sm) var(--spacing);
       }
     }
-
-    ul {
-      position: relative;
-
-      background-color: var(--colour-accent);
-      border-radius: var(--border-radius);
-      max-height: 0px;
-      overflow: hidden;
-
-      transition: max-height var(--transition);
-
-      /* We don't want to use nested nav in a mobile view since each top will have inline links to the children */
-      @media only screen and (max-width: 600px) {
-        display: none;
-      }
-
-      &:active,
-      &:focus,
-      &:focus-within,
-      &:hover {
-        max-height: 375px;
-
-        /* interpolate-size: allow-keywords; */
-        /* max-height: fit-content; */
-      }
-
-      li {
-        position: relative;
-        font-size: var(--font-size-sm);
-
-        a {
-          &:active,
-          &:focus,
-          &:hover {
-            background-color: var(--colour-accent-alt);
-          }
-        }
-
-        span {
-          /* This is to address an edge case where the last item in the nested list doesn't keep the submenu open */
-          pointer-events: all;
-        }
-      }
-
-      li:focus-within {
-        z-index: var(--z-index-overlay-item);
-
-        a,
-        span {
-          background-color: var(--colour-accent-alt);
-        }
-      }
-    }
   }
 
+  /* Styles for lists at specific levels */
   & > ul {
     display: inline-flex;
     gap: var(--spacing);
@@ -188,9 +128,76 @@
         }
       }
 
+      & > ul {
+        position: relative;
+
+        background-color: var(--colour-accent);
+        border-radius: var(--border-radius);
+        max-height: 0px;
+        overflow: hidden;
+
+        transition: max-height var(--transition);
+
+        /* We don't want to use nested nav in a mobile view since each top-level page will have inline links to the children */
+        @media only screen and (max-width: 600px) {
+          display: none;
+        }
+
+        &:has(:active),
+        &:has(:focus),
+        &:has(:hover) {
+          /* This is a magic number that is being used until Firefox and Safari support interpolate-size */
+          max-height: 375px;
+
+          /* If the keywords aren't supported, then the rendering agent will fall back to the explicit value */
+          interpolate-size: allow-keywords;
+          max-height: fit-content;
+        }
+
+        & > li {
+          position: relative;
+
+          font-size: var(--font-size-sm);
+          margin: 0;
+
+          a {
+            &:active,
+            &:focus,
+            &:hover {
+              background-color: var(--colour-accent-alt);
+            }
+          }
+
+          span {
+            /* This is to address an edge case where the last item in the nested list doesn't keep the submenu open */
+            pointer-events: all;
+          }
+        }
+
+        li:focus-within {
+          z-index: var(--z-index-overlay-item);
+
+          a,
+          span {
+            background-color: var(--colour-accent-alt);
+          }
+        }
+      }
+
       & > a,
       & > span {
         border-radius: var(--border-radius);
+
+        &:active ~ ul,
+        &:focus ~ ul,
+        &:hover ~ ul {
+          /* This is a magic number that is being used until Firefox and Safari support interpolate-size */
+          max-height: 375px;
+
+          /* If the keywords aren't supported, then the rendering agent will fall back to the explicit value */
+          interpolate-size: allow-keywords;
+          max-height: fit-content;
+        }
 
         @media only screen and (max-width: 600px) {
           border-radius: 0;

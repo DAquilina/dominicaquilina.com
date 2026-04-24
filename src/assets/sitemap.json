@@ -77,6 +77,16 @@
         },
         {
           "canNavigate": true,
+          "description": "A CLI app developed in Python for a self-contained system driven by a Raspberry Pi; involved custom wiring and sewing a servo-controlled custom machined jaw into a hat enclosure and writing a Python service to ingest sound bytes and synchronise the jaw's movement as they played.",
+          "excludeFromNav": true,
+          "label": "Animatronic Sorting Hat",
+          "path": "portfolio/sorting-hat",
+          "title": "A magical project for a magical day",
+          "type": "internal",
+          "children": []
+        },
+        {
+          "canNavigate": true,
           "description": "Throughout my career and personal life I have also taken on the role of a graphic or web designer. This is a gallery of some examples that I'm proud of.",
           "label": "Graphic Design Gallery",
           "path": "portfolio/gallery",

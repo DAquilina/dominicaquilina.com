@@ -102,7 +102,9 @@ export const PORTFOLIO_ITEMS: Array<PortfolioItem> = [
       "Raspberry Pi",
       "Python",
       "NumPy",
+      "RPi.GPIO",
       "Mechanical Engineering",
+      "Animatronics",
       "Sewing"
     ],
     type: LinkType.Internal

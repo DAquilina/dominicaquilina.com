@@ -59,6 +59,12 @@ hr {
   width: min(90%, var(--constrain-sm));
 }
 
+audio,
+img,
+video {
+  max-width: 100%;
+}
+
 p {
   line-height: var(--line-height);
 }
@@ -82,6 +88,31 @@ strong {
     top: -1px;
 
     color: var(--colour-accent-alt);
+  }
+}
+
+ul {
+  padding-left: var(--spacing-lg);
+  margin: 0 auto;
+
+  li {
+    margin-bottom: var(--spacing);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-wrapper {
+      margin-top: var(--spacing);
+    }
+
+    ul {
+      li {
+        &:first-child {
+          margin-top: var(--spacing);
+        }
+      }
+    }
   }
 }
 
@@ -113,6 +144,10 @@ strong {
   &:last-child {
     margin-right: 0;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* ***** Interactive Elements ***** */

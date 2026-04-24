@@ -1,0 +1,7 @@
+[data-route=sorting-hat] {
+  video {
+    display: block;
+    margin: 0 auto var(--spacing);
+    max-height: 500px;
+  }
+}
